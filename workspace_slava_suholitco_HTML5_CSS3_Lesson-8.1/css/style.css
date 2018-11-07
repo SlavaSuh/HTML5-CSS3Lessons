@@ -1,0 +1,741 @@
+@font-face {
+  font-family: "Bebas Neue Bold";
+  src: url(../../fonts/bebusneuebold/BebasNeue\ Bold.ttf);
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url(../../fonts/Open_Sans/OpenSans-Regular.ttf);
+}
+/* line 3, ../sass/blocks/_navigation.scss */
+.b-navigation__item:not(:last-child) {
+  margin-right: 30px;
+}
+/* line 7, ../sass/blocks/_navigation.scss */
+.b-navigation__list {
+  display: flex;
+}
+@media (max-width: 1199.98px) {
+  /* line 7, ../sass/blocks/_navigation.scss */
+  .b-navigation__list {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 767.98px) {
+  /* line 7, ../sass/blocks/_navigation.scss */
+  .b-navigation__list {
+    flex-direction: column;
+  }
+}
+/* line 19, ../sass/blocks/_navigation.scss */
+.b-navigation__link {
+  color: #ffffff;
+  font-family: "Bebas Neue Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.89px;
+  transition: 0.3s;
+}
+/* line 27, ../sass/blocks/_navigation.scss */
+.b-navigation__link::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  display: block;
+  background: #ffffff;
+  transform: translateY(10px) scale(0);
+  transition: 0.3s;
+}
+/* line 38, ../sass/blocks/_navigation.scss */
+.b-navigation__link:hover {
+  text-decoration: none;
+  color: #FF0000;
+}
+/* line 42, ../sass/blocks/_navigation.scss */
+.b-navigation__link:hover:after {
+  transform: translateY(10px) scale(1);
+}
+@media (max-width: 767.98px) {
+  /* line 42, ../sass/blocks/_navigation.scss */
+  .b-navigation__link:hover:after {
+    transform: scale(0);
+  }
+}
+
+/* line 1, ../sass/blocks/_heading-block.scss */
+.b-heading-block {
+  padding: 160px 0 0 0;
+}
+@media (max-width: 1199.98px) {
+  /* line 1, ../sass/blocks/_heading-block.scss */
+  .b-heading-block {
+    padding-top: 70px;
+  }
+}
+/* line 8, ../sass/blocks/_heading-block.scss */
+.b-heading-block__main-heading {
+  color: #ffffff;
+  font-family: "Bebas Neue Bold", sans-serif;
+  font-size: 90px;
+  font-weight: 400;
+  line-height: 88.33px;
+  text-transform: uppercase;
+}
+@media (max-width: 575.98px) {
+  /* line 8, ../sass/blocks/_heading-block.scss */
+  .b-heading-block__main-heading {
+    font-size: 70px;
+  }
+}
+/* line 20, ../sass/blocks/_heading-block.scss */
+.b-heading-block__main-heading_margin {
+  margin: 0 0 30px 0;
+}
+/* line 25, ../sass/blocks/_heading-block.scss */
+.b-heading-block__description {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-style: italic;
+  margin: 0;
+}
+/* line 32, ../sass/blocks/_heading-block.scss */
+.b-heading-block__description_margin {
+  margin: 0 0 80px 0;
+}
+/* line 37, ../sass/blocks/_heading-block.scss */
+.b-heading-block__button {
+  color: #ffffff;
+  font-family: "Bebas Neue Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 36.59px;
+  text-transform: uppercase;
+  letter-spacing: 0.33px;
+  padding: 19px 50px 15px 50px;
+  background: yellow;
+}
+/* line 48, ../sass/blocks/_heading-block.scss */
+.b-heading-block__button_left {
+  background: #d25b38;
+  transition: 0.5s;
+  margin-right: 20px;
+}
+@media (max-width: 767.98px) {
+  /* line 48, ../sass/blocks/_heading-block.scss */
+  .b-heading-block__button_left {
+    margin: 0 0 25px 0;
+  }
+}
+/* line 57, ../sass/blocks/_heading-block.scss */
+.b-heading-block__button_left:hover {
+  text-decoration: none;
+  background: #ffffff;
+  color: #d25b38;
+}
+/* line 64, ../sass/blocks/_heading-block.scss */
+.b-heading-block__button_right {
+  background: transparent;
+  transition: 0.5s;
+  border: 5px solid #ffffff;
+  padding: 14px 45px 10px 45px;
+}
+/* line 70, ../sass/blocks/_heading-block.scss */
+.b-heading-block__button_right:hover {
+  text-decoration: none;
+  background: #ffffff;
+  color: #d25b38;
+}
+
+/* line 3, ../sass/blocks/_about-us.scss */
+.b-about-us-section__heading {
+  color: #454443;
+  font-family: "Bebas Neue Bold", sans-serif;
+  font-size: 78px;
+  font-weight: 400;
+  line-height: 80.59px;
+  text-transform: uppercase;
+}
+/* line 11, ../sass/blocks/_about-us.scss */
+.b-about-us-section__heading_span {
+  color: #d25b38;
+}
+/* line 16, ../sass/blocks/_about-us.scss */
+.b-about-us-section__description {
+  text-align: justify;
+}
+/* line 20, ../sass/blocks/_about-us.scss */
+.b-about-us-section_padding {
+  padding: 100px 0 30px 0;
+}
+
+/* line 1, ../sass/blocks/_about-us-middle.scss */
+.b-about-us-middle {
+  background: url(../../img/about-us-image.png) no-repeat;
+  background-size: cover;
+  opacity: .9;
+  height: 794px;
+  padding: 89px 58px 130px 68px;
+  text-align: end;
+}
+/* line 9, ../sass/blocks/_about-us-middle.scss */
+.b-about-us-middle__block:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 35px;
+}
+/* line 14, ../sass/blocks/_about-us-middle.scss */
+.b-about-us-middle__first-description {
+  color: #ffffff;
+  font-family: "Bebas Neue Bold", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36.59px;
+  text-transform: uppercase;
+}
+/* line 22, ../sass/blocks/_about-us-middle.scss */
+.b-about-us-middle__first-description_margin {
+  margin-top: 50px;
+}
+/* line 27, ../sass/blocks/_about-us-middle.scss */
+.b-about-us-middle__second-description {
+  color: #ffffff;
+  font-family: "Bebas Neue Bold", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 36.59px;
+  text-transform: uppercase;
+}
+
+/* line 1, ../sass/blocks/_about-us-right.scss */
+.b-about-us-right {
+  padding: 60px 0 0 0px;
+}
+/* line 4, ../sass/blocks/_about-us-right.scss */
+.b-about-us-right__block {
+  display: flex;
+  justify-content: flex-start;
+}
+/* line 8, ../sass/blocks/_about-us-right.scss */
+.b-about-us-right__block_margin {
+  margin-top: 60px;
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* line 8, ../sass/blocks/_about-us-right.scss */
+  .b-about-us-right__block_margin {
+    margin-top: 75px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* line 8, ../sass/blocks/_about-us-right.scss */
+  .b-about-us-right__block_margin {
+    margin-top: 80px;
+  }
+}
+/* line 21, ../sass/blocks/_about-us-right.scss */
+.b-about-us-right__image {
+  height: 86px;
+  width: 86px;
+  position: relative;
+  right: 75px;
+}
+/* line 28, ../sass/blocks/_about-us-right.scss */
+.b-about-us-right__description {
+  text-align: justify;
+}
+/* line 31, ../sass/blocks/_about-us-right.scss */
+.b-about-us-right__description_margin-left {
+  margin-left: -50px;
+}
+
+/* line 1, ../sass/nbb/_our-services.scss */
+.our-services {
+  background: #f4f2f2;
+  padding: 84px 0 84px 0;
+}
+/* line 5, ../sass/nbb/_our-services.scss */
+.our-services h2 {
+  color: #454443;
+  font-family: "Bebas Neue Bold", sans-serif;
+  font-size: 78px;
+  font-weight: 400;
+  line-height: 80.59px;
+  text-transform: uppercase;
+  margin: 0 0 0 0;
+}
+/* line 15, ../sass/nbb/_our-services.scss */
+.our-services h2 span {
+  color: #d25b38;
+}
+
+/* line 21, ../sass/nbb/_our-services.scss */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* line 21, ../sass/nbb/_our-services.scss */
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 575.98px) {
+  /* line 21, ../sass/nbb/_our-services.scss */
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+/* line 33, ../sass/nbb/_our-services.scss */
+.grid-container__block {
+  padding: 40px 25px 50px 25px;
+  background: #ffffff;
+  text-align: center;
+}
+/* line 38, ../sass/nbb/_our-services.scss */
+.grid-container__block h4 {
+  color: #d25b38;
+  font-family: "Bebas Neue Bold", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 36.59px;
+  text-transform: uppercase;
+  margin: 35px 0 0 0;
+}
+
+/* line 1, ../sass/blocks/_design-blog.scss */
+.b-design-blog {
+  padding: 84px 0 84px 0;
+}
+/* line 4, ../sass/blocks/_design-blog.scss */
+.b-design-blog__heading {
+  color: #454443;
+  font-family: "Bebas Neue Bold", sans-serif;
+  font-size: 78px;
+  font-weight: 400;
+  line-height: 80.59px;
+  text-transform: uppercase;
+}
+/* line 12, ../sass/blocks/_design-blog.scss */
+.b-design-blog__heading_span {
+  color: #d25b38;
+}
+/* line 17, ../sass/blocks/_design-blog.scss */
+.b-design-blog__center-block {
+  display: flex;
+}
+@media (max-width: 575.98px) {
+  /* line 17, ../sass/blocks/_design-blog.scss */
+  .b-design-blog__center-block {
+    flex-direction: column;
+  }
+}
+/* line 25, ../sass/blocks/_design-blog.scss */
+.b-design-blog__center-img {
+  margin: 0 20px 20px 0;
+}
+@media (max-width: 575.98px) {
+  /* line 25, ../sass/blocks/_design-blog.scss */
+  .b-design-blog__center-img {
+    width: 100%;
+  }
+}
+/* line 33, ../sass/blocks/_design-blog.scss */
+.b-design-blog__center-heading {
+  color: #454443;
+  font-family: "Bebas Neue Bold", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 36.59px;
+  text-transform: uppercase;
+}
+/* line 42, ../sass/blocks/_design-blog.scss */
+.b-design-blog__center-description {
+  text-align: justify;
+}
+/* line 46, ../sass/blocks/_design-blog.scss */
+.b-design-blog__right-block {
+  height: 598px;
+  background: url(../../img/4-layers-right.png) no-repeat;
+  background-size: cover;
+  padding: 0 30px 30px 30px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+/* line 58, ../sass/blocks/_design-blog.scss */
+.b-design-blog__right-heading {
+  color: #ffffff;
+  font-family: "Bebas Neue Bold", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+/* line 66, ../sass/blocks/_design-blog.scss */
+.b-design-blog__right-description {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* line 1, ../sass/blocks/_our-team.scss */
+.b-our-team {
+  padding: 80px 0 80px 0;
+  background: #f4f2f2;
+}
+/* line 5, ../sass/blocks/_our-team.scss */
+.b-our-team__heading {
+  color: #454443;
+  font-family: "Bebas Neue Bold", sans-serif;
+  font-size: 75px;
+  font-weight: 400;
+  line-height: 80.59px;
+  text-transform: uppercase;
+}
+/* line 14, ../sass/blocks/_our-team.scss */
+.b-our-team__heading-span {
+  color: #d25b38;
+}
+/* line 18, ../sass/blocks/_our-team.scss */
+.b-our-team__description-of-team {
+  text-align: center;
+}
+/* line 22, ../sass/blocks/_our-team.scss */
+.b-our-team__image {
+  width: 100%;
+}
+@media (min-width: 350px) and (max-width: 576px) {
+  /* line 22, ../sass/blocks/_our-team.scss */
+  .b-our-team__image {
+    width: 80%;
+  }
+}
+/* line 30, ../sass/blocks/_our-team.scss */
+.b-our-team__heading-name {
+  color: #454443;
+  font-family: "Bebas Neue Bold", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 36.59px;
+  text-transform: uppercase;
+}
+/* line 38, ../sass/blocks/_our-team.scss */
+.b-our-team__heading-name_margin {
+  margin: 57px 0 0 0;
+}
+/* line 43, ../sass/blocks/_our-team.scss */
+.b-our-team__heading-profession {
+  color: #d25b38;
+  font-family: "Bebas Neue Bold", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 36.59px;
+  text-transform: uppercase;
+}
+
+/* line 1, ../sass/nbb/_our-portofolio.scss */
+.portofolio-grid {
+  margin: 0 auto;
+  width: 1600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 1620px) {
+  /* line 1, ../sass/nbb/_our-portofolio.scss */
+  .portofolio-grid {
+    width: 780px;
+    grid-template-columns: 265px;
+  }
+}
+@media (max-width: 860px) {
+  /* line 1, ../sass/nbb/_our-portofolio.scss */
+  .portofolio-grid {
+    display: none;
+  }
+}
+/* line 16, ../sass/nbb/_our-portofolio.scss */
+.portofolio-grid .left-part {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 265px 265px 265px;
+  grid-template-areas: "pr1 pr1" "pr2 pr3" "pr2 pr3";
+}
+/* line 26, ../sass/nbb/_our-portofolio.scss */
+.portofolio-grid .right-part {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 265px 265px 265px;
+  grid-template-areas: "pr4 pr4" "pr5 pr7" "pr6 pr7";
+}
+/* line 36, ../sass/nbb/_our-portofolio.scss */
+.portofolio-grid .portofolio-1 {
+  grid-area: pr1;
+}
+/* line 40, ../sass/nbb/_our-portofolio.scss */
+.portofolio-grid .portofolio-2 {
+  grid-area: pr2;
+}
+/* line 44, ../sass/nbb/_our-portofolio.scss */
+.portofolio-grid .portofolio-3 {
+  grid-area: pr3;
+}
+/* line 48, ../sass/nbb/_our-portofolio.scss */
+.portofolio-grid .portofolio-4 {
+  grid-area: pr4;
+}
+/* line 52, ../sass/nbb/_our-portofolio.scss */
+.portofolio-grid .portofolio-5 {
+  grid-area: pr5;
+}
+/* line 56, ../sass/nbb/_our-portofolio.scss */
+.portofolio-grid .portofolio-6 {
+  grid-area: pr6;
+}
+/* line 60, ../sass/nbb/_our-portofolio.scss */
+.portofolio-grid .portofolio-7 {
+  grid-area: pr7;
+}
+
+/* line 1, ../sass/blocks/_design-packages.scss */
+.b-design-package {
+  background: #f2f2f2;
+  padding: 80px 0 80px 0;
+}
+/* line 5, ../sass/blocks/_design-packages.scss */
+.b-design-package__heading {
+  color: #454443;
+  font-family: "Bebas Neue Bold", sans-serif;
+  font-size: 75px;
+  font-weight: 400;
+  line-height: 80.59px;
+  text-transform: uppercase;
+}
+/* line 14, ../sass/blocks/_design-packages.scss */
+.b-design-package__heading-span {
+  color: #d25b38;
+}
+/* line 18, ../sass/blocks/_design-packages.scss */
+.b-design-package__block {
+  background: #ffffff;
+  padding: 50px 25px 25px 25px;
+  text-align: center;
+}
+@media (max-width: 767.98px) {
+  /* line 18, ../sass/blocks/_design-packages.scss */
+  .b-design-package__block {
+    margin-bottom: 20px;
+  }
+}
+/* line 30, ../sass/blocks/_design-packages.scss */
+.b-design-package__image_margin {
+  margin: 0 0 40px 0;
+}
+/* line 35, ../sass/blocks/_design-packages.scss */
+.b-design-package__heading-name {
+  color: #454443;
+  font-family: "Bebas Neue Bold", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 36.59px;
+  margin: 0;
+}
+/* line 45, ../sass/blocks/_design-packages.scss */
+.b-design-package__heading-profession {
+  color: #d25b38;
+  font-family: "Bebas Neue Bold", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 36.59px;
+}
+/* line 55, ../sass/blocks/_design-packages.scss */
+.b-design-package__description_margin {
+  margin: 40px 0 35px 0;
+}
+/* line 60, ../sass/blocks/_design-packages.scss */
+.b-design-package__price {
+  color: #454443;
+  font-family: "Bebas Neue Bold", sans-serif;
+  font-size: 71px;
+  font-weight: 400;
+  line-height: 65.92px;
+}
+/* line 67, ../sass/blocks/_design-packages.scss */
+.b-design-package__price_color {
+  color: #d25b38;
+}
+/* line 71, ../sass/blocks/_design-packages.scss */
+.b-design-package__price_margin {
+  margin-bottom: 25px;
+}
+/* line 76, ../sass/blocks/_design-packages.scss */
+.b-design-package__button {
+  color: #ffffff;
+  font-family: "Bebas Neue Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 36.59px;
+  padding: 15px 40px 13px 40px;
+  background: #d25b38;
+  transition: .5s;
+}
+/* line 87, ../sass/blocks/_design-packages.scss */
+.b-design-package__button:hover {
+  text-decoration: none;
+  background: #f05b33;
+  color: #ffffff;
+}
+
+/* line 1, ../sass/blocks/_how-find-us.scss */
+.b-how-find-us {
+  position: relative;
+}
+/* line 4, ../sass/blocks/_how-find-us.scss */
+.b-how-find-us__left-block {
+  padding-left: 150px;
+}
+@media (max-width: 1199.98px) {
+  /* line 4, ../sass/blocks/_how-find-us.scss */
+  .b-how-find-us__left-block {
+    padding: 0;
+    text-align: center;
+  }
+}
+/* line 13, ../sass/blocks/_how-find-us.scss */
+.b-how-find-us__heading {
+  color: #454443;
+  font-family: "Bebas Neue Bold";
+  font-size: 78px;
+  font-weight: 400;
+  line-height: 80.59px;
+  text-transform: uppercase;
+  margin-top: 70px;
+}
+/* line 23, ../sass/blocks/_how-find-us.scss */
+.b-how-find-us__heading_color {
+  color: #d25b38;
+}
+/* line 28, ../sass/blocks/_how-find-us.scss */
+.b-how-find-us__adress {
+  display: flex;
+  background: url(../../img/footer-map.png) no-repeat;
+  background-position: 0 10px;
+  padding: 20px 0 0 80px;
+  text-align: justify;
+}
+/* line 35, ../sass/blocks/_how-find-us.scss */
+.b-how-find-us__adress_margin {
+  margin: 10px 0 25px 0;
+}
+/* line 40, ../sass/blocks/_how-find-us.scss */
+.b-how-find-us__address-heading {
+  color: #d25b38;
+  font-family: "Bebas Neue Bold", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36.59px;
+}
+/* line 48, ../sass/blocks/_how-find-us.scss */
+.b-how-find-us__call-us {
+  display: flex;
+  background: url(../../img/footer-phone.png) no-repeat;
+  background-position: 0 10px;
+  padding: 20px 0 0 80px;
+  text-align: justify;
+}
+/* line 55, ../sass/blocks/_how-find-us.scss */
+.b-how-find-us__call-us_margin {
+  margin-bottom: 25px;
+}
+/* line 60, ../sass/blocks/_how-find-us.scss */
+.b-how-find-us__call-us-heading {
+  color: #d25b38;
+  font-family: "Bebas Neue Bold", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36.59px;
+}
+/* line 68, ../sass/blocks/_how-find-us.scss */
+.b-how-find-us__email {
+  display: flex;
+  background: url(../../img/footer-email.png) no-repeat;
+  background-position: 0 10px;
+  padding: 20px 0 0 80px;
+  text-align: justify;
+}
+/* line 75, ../sass/blocks/_how-find-us.scss */
+.b-how-find-us__email_margin {
+  margin-bottom: 40px;
+}
+/* line 80, ../sass/blocks/_how-find-us.scss */
+.b-how-find-us__email-heading {
+  color: #d25b38;
+  font-family: "Bebas Neue Bold", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36.59px;
+}
+/* line 88, ../sass/blocks/_how-find-us.scss */
+.b-how-find-us__website {
+  display: flex;
+  background: url(../../img/footer-web-site.png) no-repeat;
+  background-position: 0 10px;
+  padding: 20px 0 0 80px;
+  text-align: justify;
+}
+/* line 96, ../sass/blocks/_how-find-us.scss */
+.b-how-find-us__website-heading {
+  color: #d25b38;
+  font-family: "Bebas Neue Bold", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36.59px;
+}
+/* line 104, ../sass/blocks/_how-find-us.scss */
+.b-how-find-us__img-block {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* line 20, ../sass/style.scss */
+body {
+  box-sizing: border-box;
+  color: #666564;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* line 28, ../sass/style.scss */
+p {
+  margin: 0;
+}
+
+/* line 32, ../sass/style.scss */
+header {
+  padding: 55px 0 190px 0;
+  background: url(../img/header-bg.png) no-repeat;
+  background-size: cover;
+}
+
+/* line 38, ../sass/style.scss */
+.heading-another-color {
+  color: #f05b33;
+}
+
+@media (max-width: 767.98px) {
+  /* line 42, ../sass/style.scss */
+  .header-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* line 49, ../sass/style.scss */
+.copyright {
+  background: #f2f2f2;
+  padding: 60px 0;
+  text-align: center;
+}

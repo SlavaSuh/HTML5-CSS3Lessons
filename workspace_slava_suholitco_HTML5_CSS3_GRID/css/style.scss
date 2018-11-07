@@ -1,0 +1,995 @@
+
+body {
+    box-sizing: border-box;
+    padding: 20px;
+}
+@mixin respondTo($_media) {
+    @if $_media == phones {
+      @media all and (max-width: 479px) { @content; }
+    }
+    @else if $_media == wide-phones {
+      @media all and (min-width: 480px) and (max-width: 767px) { @content; }
+    }
+    @else if $_media == tablets {
+      @media all and (min-width: 768px) and (max-width: 991px) { @content; }
+    }
+    @else if $_media == small-desktops {
+      @media all and (min-width: 992px) and (max-width: 1199px) { @content; }
+    }
+    @else if $_media == lg-desktops {
+      @media all and (min-width: 1200px) and (max-width: 1440px) { @content; }
+    }
+    @else if $_media == xlg-desktops {
+      @media all and (min-width: 1441px) and (max-width: 1920px) { @content; }
+    }
+  }
+  .container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+header {
+    .header__logo__contacts {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 25px;
+        @include respondTo(small-desktops) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        @include respondTo(tablets) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @include respondTo(wide-phones) {
+            grid-template-columns: 1fr;
+        }
+        @include respondTo(phones) {
+            grid-template-columns: 1fr;
+        }
+        div {
+            color: #6a6a6a;
+            font-family: "Open Sans", Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            font-weight: 400; 
+            line-height: 22px;
+            p {
+                margin: 0;
+                span {
+                    font-weight: 700;
+                }
+            } 
+        }
+        img {
+            @include respondTo(small-desktops) {
+                grid-column-start: 1;
+                grid-column-end: -1;
+            }
+            @include respondTo(tablets) {
+                grid-column-start: 1;
+                grid-column-end: -1;
+            }
+        }
+        .time__header {
+            background: url(../img/time-header.png) no-repeat left center;
+            padding-left: 66px;
+            height: 51px;
+        }
+        .mail__header {
+            background: url(../img/mail-header.png) no-repeat left center;
+            padding-left: 66px;
+            height: 51px;
+        }
+        .phone__header {
+            background: url(../img/phone-header.png) no-repeat left center;
+            padding-left: 66px;
+            height: 51px;
+        }
+    }
+    .separator {
+        height: 2px;
+        background-color: #c2c2c2;
+        opacity: 0.31;
+        margin: 20px 0 0 0;
+    }
+    .header__nav__social__list {
+        display: flex;
+        justify-content: space-between;
+        @media all and (max-width: 992px){
+            flex-direction: column;
+        }
+        nav {
+            ul {
+                margin: 0 0 0 0;
+                padding: 0;
+                display: flex;
+                justify-content: space-between;
+                @include respondTo(wide-phones) {
+                    display: flex;
+                    flex-direction: column;
+                }
+                @include respondTo(phones) {
+                    display: flex;
+                    flex-direction: column;
+                }
+                li{
+                    line-height: 90px;
+                    @include respondTo(tablets) {
+                        line-height: 40px;
+                    }
+                    @include respondTo(wide-phones) {
+                        line-height: 40px;
+                    }
+                    @include respondTo(phones) {
+                        line-height: 40px;
+                    }
+                    a {
+                        color: #6c6c6c;
+                        font-family: "Nexa Bold", Arial, Helvetica, sans-serif;
+                        font-size: 20px;
+                        font-weight: 400;
+                    }
+                    .current__nav__page {
+                        color: #262626;
+                        font-weight: 700;
+                    }
+                }
+                li:not(:last-child) {
+                    padding-right: 50px;
+                }
+            }
+        }
+        .social__list {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            li {
+                line-height: 90px;
+                @include respondTo(tablets) {
+                    line-height: 40px;
+                }
+                @include respondTo(wide-phones) {
+                    line-height: 40px;
+                }
+                @include respondTo(phones) {
+                    line-height: 40px;
+                }
+            }
+            li:not(:last-child) {
+                padding-right: 28px;
+            }
+        }
+    }
+}
+.main__presentation {
+    background: url(../img/background__man.png) no-repeat center center;
+    height: 640px;
+    display: flex;
+    align-items: center;
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 30px;
+        @include respondTo(tablets) {
+            margin-left: 0;
+        }
+        @include respondTo(wide-phones) {
+            margin-left: 0;
+        }
+        @include respondTo(phones) {
+            margin-left: 0;
+        }
+        h1 {
+            margin: 0;
+            color: #474747;
+            font-family: Montserrat, Arial, Helvetica, sans-serif;
+            font-size: 48px;
+            font-weight: 500;
+            letter-spacing: -1.19px;
+            text-align: center;
+        }
+        h3 {
+            margin: 30px 0 50px 0;
+            color: #3f3f3f;
+            font-family: "Open Sans", Arial, Helvetica, sans-serif;
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 30px;
+            text-align: center;
+        }
+        a {
+            color: #ffffff;
+            font-family: Lato, Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            padding: 14px 31px 11px 31px;
+            background: #1a9bdc;
+            border-radius: 50px;
+            box-shadow: -4px 12px 40px rgba(0, 1, 1, 0.2);
+        }
+    }
+}
+.about__us {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    @include respondTo(small-desktops) {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+     }
+    @include respondTo(tablets) {
+       grid-template-columns: 1fr 1fr;
+       grid-gap: 20px;
+    }
+    @include respondTo(wide-phones) {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+     }
+     @include respondTo(phones) {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+     }
+    div {
+        padding: 70px 0 33px 0;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    img {
+        border-radius: 50%;
+        margin-bottom: 30px;
+    }
+    h3 {
+        color: #ffffff;
+        font-family: Montserrat, Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        margin: 0 0 29px 0;
+    }
+    p {
+        color: #ffffff;
+        font-family: "Open Sans", Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+        margin: 0 0 0 0;
+    }
+    .about__us__block1 {
+        background-color: #43b1d2;
+        width: 100%;
+    }
+    .about__us__block2 {
+        background-color: #3fb6c6;
+        width: 100%;    
+    }
+    .about__us__block3 {
+        background-color: #3cbbbb;
+        width: 100%;    
+    }
+    .about__us__block4 {
+        background-color: #37c3a8;
+        width: 100%;    
+    }
+}
+.why__choose__us {
+    h2 {
+        margin: 110px 0 30px 0;
+        color: #494949;
+        font-family: "Montserrat Bold", Arial, Helvetica, sans-serif;
+        font-size: 45px;
+        font-weight: 700;
+        text-align: center;
+    }
+    h4 {
+        margin: 0 0 25px 0;
+        color: #6a6a6a;
+        font-family: "Open Sans", Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: center;
+    }
+    .why__choose__us__grid__container {
+        display: grid;
+        grid-template-columns: 1fr 337px 1fr;
+        grid-gap: 20px;
+        grid-template-areas: "section1 black__woman section2"
+                             "section3 black__woman section4";
+        @include respondTo(xlg-desktops) {
+            height: 600px;
+        }
+        @include respondTo(lg-desktops) {
+            height: 600px;
+        }
+        @include respondTo(small-desktops) {
+            height: 600px;
+        }
+        @include respondTo(tablets) {
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+            grid-template-areas: "black__woman black__woman"
+                                 "section1 section2"
+                                 "section3 section4";
+        }
+        @include respondTo(wide-phones) {
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+            grid-template-areas: "black__woman"
+                                 "section1"
+                                 "section2"
+                                 "section3"
+                                 "section4";
+        }
+        @include respondTo(phones) {
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+            grid-template-areas: "black__woman"
+                                 "section1"
+                                 "section2"
+                                 "section3"
+                                 "section4";
+        }
+    }
+    section {
+        justify-self: center;
+        align-self: center;
+        h3 {
+            color: #6f6f6e;
+            font-family: Montserrat, Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            font-weight: 700;
+            letter-spacing: -1.82px;
+            margin: 0 0 20px 0;
+            padding: 0 0 0 93px;
+        }
+        p {
+            color: #6a6a6a;
+            font-family: "Open Sans", Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 30px;
+            margin: 0 0 0 0;
+        }
+    }
+    .section1 {
+        grid-area: section1;
+        h3 {
+            background: url(../img/med-1.png) no-repeat 0 0;
+            line-height: 75px;
+        }
+    }
+    .section2 {
+        grid-area: section2;
+        h3 {
+            background: url(../img/med-2.png) no-repeat 0 0;
+            line-height: 75px;
+        }
+    }
+    .section3 {
+        grid-area: section3;
+        h3 {
+            background: url(../img/med-3.png) no-repeat 0 0;
+            line-height: 75px;
+        }
+    }
+    .section4 {
+        grid-area: section4;
+        h3 {
+            background: url(../img/med-4.png) no-repeat 0 0;
+            line-height: 75px;
+        }
+    }
+    .background__woman {
+        grid-area: black__woman;
+        background: url(../img/woman-medic.png) no-repeat center center;
+        @include respondTo(tablets) {
+            height: 600px;
+        } 
+        @include respondTo(wide-phones) {
+            height: 600px;
+        }
+        @include respondTo(phones) {
+            height: 600px;
+        }
+    }
+}
+.our__statistic {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    background: url(../img/2-layers.png) center center;
+    height: 792px;
+    justify-items: center;
+    align-items: center;
+    @include respondTo(tablets) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @include respondTo(wide-phones) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @include respondTo(phones) {
+        grid-template-columns: 1fr;
+        height: 1500px;
+    }
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include respondTo(tablets) {
+            padding-top: 50px;
+        }
+    }
+    .number {
+        color: #ffffff;
+        font-family: Montserrat, Arial, Helvetica, sans-serif;
+        font-size: 60px;
+        font-weight: 500;
+        letter-spacing: -1.19px;
+        margin: 50px 0 25px 0;
+    }
+    .statistic__paragraph {
+        color: #ffffff;
+        font-family: Montserrat, Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        font-weight: 500;
+        letter-spacing: -1.52px;
+        text-align: center;
+        margin: 25px 0 0 0;
+    }
+}
+.how__we__works__our__creative {
+    padding: 100px 0 90px 0;
+    article {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-areas: "how__we__works__heading . our__creative__heading"
+        "how__we__works__paragraph how__we__works__paragraph our__creative__paragraph"
+        "img1 img2 heart__treatment1"
+        "how__we__works__section1__description how__we__works__section2__description heart__treatment2"
+        "read__more__button read__more__button .";
+        @include respondTo(small-desktops) {
+            grid-template-areas: "how__we__works__heading how__we__works__heading"
+            "how__we__works__paragraph how__we__works__paragraph"
+            "img1 img2"
+            "how__we__works__section1__description how__we__works__section2__description"
+            "our__creative__heading our__creative__heading"
+            "our__creative__paragraph our__creative__paragraph"
+            "heart__treatment1 heart__treatment2"
+            "read__more__button  read__more__button";
+        }
+        @include respondTo(tablets) {
+            grid-template-areas: "how__we__works__heading how__we__works__heading"
+            "how__we__works__paragraph how__we__works__paragraph"
+            "img1 img2"
+            "how__we__works__section1__description how__we__works__section2__description"
+            "our__creative__heading our__creative__heading"
+            "our__creative__paragraph our__creative__paragraph"
+            "heart__treatment1 heart__treatment2"
+            "read__more__button  read__more__button";
+        }
+        @include respondTo(wide-phones) {
+            grid-template-areas:"how__we__works__heading"
+            "how__we__works__paragraph"
+            "img1" "how__we__works__section1__description"
+            "img2" "how__we__works__section2__description"
+            "our__creative__heading"
+            "our__creative__paragraph"
+            "heart__treatment1" "heart__treatment2"
+            "read__more__button";
+        }
+        @include respondTo(phones) {
+            grid-template-areas:"how__we__works__heading"
+            "how__we__works__paragraph"
+            "img1" "how__we__works__section1__description"
+            "img2" "how__we__works__section2__description"
+            "our__creative__heading"
+            "our__creative__paragraph"
+            "heart__treatment1" "heart__treatment2"
+            "read__more__button";
+        }
+        h2 {
+            color: #494949;
+            font-family: Montserrat, Arial, Helvetica, sans-serif;
+            font-size: 45px;
+            font-weight: 700;
+            margin:0;
+        }
+        p {
+            color: #6a6a6a;
+            font-family: "Open Sans", Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 30px;
+            margin: 0;
+        }
+        h4 {
+            color: #6f6f6e;
+            font-family: Montserrat, Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+            letter-spacing: -1.21px;
+            margin: 0;
+        }
+        .blue__font {
+            color: #0087be;
+            font-family: Montserrat,Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            font-weight: 500;
+            letter-spacing: -0.38px;
+        }
+        a {
+            color: #ffffff;
+            font-family: Lato,Arial, Helvetica, sans-serif;
+            font-size: 17px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.32px;
+            background-color: #0087be;
+            padding: 17px 28px 15px 28px;
+            border-radius: 50px;
+            justify-self: center;
+            margin: 0;
+            box-shadow: -4px 11px 40px 0 rgba(0, 1, 1, 0.5);
+        }
+        .heart__treatment {
+            color: #494949;
+            font-family: Montserrat, Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+            width: 95%;
+            padding: 12px 0 12px 0;
+            border-radius: 50px;
+            background: url(../img/heartPoint.png) no-repeat 10px 8px;
+            background-color: #e2e2e2;
+            text-align: center;
+        }
+        .heart__treatment2 {
+            div:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+        .current__heart__treatment {
+            color: #ffffff;
+            background: url(../img/heartPoint.png) no-repeat 10px 8px;
+            background-color: #0087be;
+        }
+        .how__we__works__heading {
+            grid-area: how__we__works__heading;
+            @include respondTo(small-desktops) {
+                justify-self: center;
+            }
+            grid-area: how__we__works__heading;
+            @include respondTo(tablets) {
+                justify-self: center;
+            }
+            @include respondTo(wide-phones) {
+                justify-self: center;
+            }
+        }
+        .how__we__works__paragraph {
+            grid-area: how__we__works__paragraph;
+            @include respondTo(small-desktops) {
+                justify-self: center;
+            }
+            @include respondTo(tablets) {
+                justify-self: center;
+            }
+            @include respondTo(wide-phones) {
+                justify-self: center;
+            }
+        }
+        .img1 {
+            grid-area: img1;
+            @include respondTo(small-desktops) {
+                justify-self: center;
+            }
+            @include respondTo(tablets) {
+                justify-self: center;
+            }
+            @include respondTo(wide-phones) {
+                justify-self: center;
+            }
+        }
+        .how__we__works__section1__description {
+            grid-area: how__we__works__section1__description;
+            @include respondTo(small-desktops) {
+                justify-self: center;
+            }
+            @include respondTo(tablets) {
+                justify-self: center;
+            }
+            @include respondTo(wide-phones) {
+                justify-self: center;
+            }
+        }
+        .img2 {
+            grid-area: img2;
+            @include respondTo(small-desktops) {
+                justify-self: center;
+            }
+            @include respondTo(tablets) {
+                justify-self: center;
+            }
+            @include respondTo(wide-phones) {
+                justify-self: center;
+            }
+        }
+        .how__we__works__section2__description {
+            grid-area: how__we__works__section2__description;
+            @include respondTo(small-desktops) {
+                justify-self: center;
+            }
+            @include respondTo(tablets) {
+                justify-self: center;
+            }
+            @include respondTo(wide-phones) {
+                justify-self: center;
+            }
+        }
+        a {
+            grid-area: read__more__button;
+        }
+        .our__creative__heading {
+            grid-area: our__creative__heading;
+            @include respondTo(small-desktops) {
+                justify-self: center;
+            }
+            @include respondTo(tablets) {
+                justify-self: center;
+            }
+            @include respondTo(wide-phones) {
+                justify-self: center;
+            }
+        }
+        .our__creative__paragraph {
+            grid-area: our__creative__paragraph;
+            @include respondTo(small-desktops) {
+                justify-self: center;
+            }
+            @include respondTo(tablets) {
+                justify-self: center;
+            }
+            @include respondTo(wide-phones) {
+                justify-self: center;
+            }
+        }
+        .heart__treatment1 {
+            grid-area: heart__treatment1;
+        }
+        .heart__treatment2 {
+            grid-area: heart__treatment2;
+        }
+    }
+}
+.gallery {
+    background: url(../img/2-layers__gallery.png);
+    padding: 96px 0 90px 0;
+    h2 {
+        color: #ffffff;
+        font-family: Montserrat, Arial, Helvetica, sans-serif;
+        font-size: 45px;
+        font-weight: 700;
+        text-align: center;
+        margin: 0 0 0 0;
+    }
+    h4 {
+        color: #ffffff;
+        font-family: "Open Sans", Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: center;
+        margin: 38px 0 54px 0;
+    }
+    div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px;
+        @include respondTo(small-desktops) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @include respondTo(tablets) {
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 0;
+        }
+        @include respondTo(wide-phones) {
+            grid-template-columns: 1fr;
+        }
+        @include respondTo(phones) {
+            grid-template-columns: 1fr;
+        }
+        img {
+            @include respondTo(small-desktops) {
+                justify-self: center;
+            }
+            @include respondTo(tablets) {
+                justify-self: center;
+            }
+            @include respondTo(wide-phones) {
+                justify-self: center;
+            }
+            @include respondTo(phones) {
+                justify-self: center;
+                width: 100%;
+            }
+        }
+        @media all and (min-width: 1200px) {
+            img:first-child {
+                justify-self: end;
+            }
+            img:nth-child(2) {
+                justify-self: center;
+            }
+            img:nth-child(4) {
+                justify-self: end;
+            }
+            img:nth-child(5) {
+                justify-self: center;
+            }
+        }
+        
+    }
+}
+.our__team {
+    padding: 140px 0 130px 0;
+    h2 {
+        color: #494949;
+        font-family: Montserrat, Arial, Helvetica, sans-serif;
+        font-size: 45px;
+        font-weight: 700;
+        margin: 0 0 48px 0;
+        text-align: center;
+    }
+    h4 {
+        color: #6a6a6a;
+        font-family: "Open Sans", Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+        margin: 0 0 80px 0;
+        text-align: center;
+    }
+    .our__team__grid__wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        @include respondTo(small-desktops) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @include respondTo(tablets) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @include respondTo(wide-phones) {
+            grid-template-columns: 1fr;
+        }
+        @include respondTo(phones) {
+            grid-template-columns: 1fr;
+        }
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .name {
+                font-size: 25px;
+                font-weight: 500;
+                margin: 33px 0 15px 0;
+            }
+            p {
+                color: #6f6f6e;
+                font-family: Montserrat, Arial, Helvetica, sans-serif;
+                font-size: 18px;
+                font-weight: 500;
+                letter-spacing: -1.09px;
+                margin: 0 0 0 0;
+                text-align: center;
+            }
+            .our__team__social {
+                width: 38px;
+                height: 33px;
+                margin: 28px 0 0 0;
+            }
+            .our__team__social:first-child {
+                background: url(../img/social.png);
+                background-position: 0 0;
+            }
+            .our__team__social:last-child {
+                background: url(../img/social.png);
+                background-position: -82px 0;
+            }
+            .our__team__social:nth-child(2) {
+                background: url(../img/social.png);
+                background-position: -38px 0;
+            }
+        }
+    }
+}
+.new__patient {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    background: #e2e2e2;
+    padding: 82px 0 66px 0;
+    @include respondTo(small-desktops) {
+        grid-template-columns:1fr;
+    }
+    @include respondTo(tablets) {
+        grid-template-columns:1fr;
+    }
+    @include respondTo(wide-phones) {
+        grid-template-columns:1fr;
+    }
+    @include respondTo(phones) {
+        grid-template-columns:1fr;
+    }
+    h3 {
+        color: #494949;
+        font-family: Montserrat, Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        margin: 0 0 0 0;
+        justify-self: center;
+        align-self: center;
+        @include respondTo(tablets) {
+            justify-self: center;
+        }
+    }
+    a {
+        color: #ffffff;
+        font-family: Lato, Arial, Helvetica, sans-serif;
+        font-size: 21px;
+        font-weight: 700;
+        letter-spacing: 0.32px;
+        padding: 15px 35px 12px 33px;
+        background-color: #0087be;
+        border-radius: 50px;
+        justify-self: start;
+        box-shadow: -4px 12px 40px rgba(0, 1, 1, 0.2);
+        @include respondTo(small-desktops) {
+            grid-row-start: 2;
+            grid-row-end: 3;
+            justify-self: center;
+        }
+        @include respondTo(tablets) {
+            grid-row-start: 2;
+            grid-row-end: 3;
+            justify-self: center;
+        }
+        @include respondTo(wide-phones) {
+            justify-self: center;
+        }
+        @include respondTo(phones) {
+            justify-self: center;
+        }
+    }
+}
+footer {
+    background: #171717;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 106px 0 0 0;
+    @include respondTo(tablets) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @include respondTo(wide-phones) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @include respondTo(phones) {
+        grid-template-columns: 1fr;
+    }
+    h3 {
+        color: #ffffff;
+        font-family: "Open Sans", Arial, Helvetica, sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0.55px;
+        margin: 0 0 70px 0;
+    }
+    p {
+        opacity: 0.51;
+        color: #ffffff;
+        font-family: "Open Sans", Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        /* Text style for "f, ree@psd" */
+        letter-spacing: 0.4px;
+        margin: 0 0 0 0;
+    }
+    a {
+        opacity: 0.51;
+        color: #ffffff;
+        font-family: "Open Sans", Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0.4px;
+    }
+    .get__in__touch {
+        justify-self: end;
+    }
+    .quick__links {
+        justify-self: center;
+    }
+    .our__services {
+        justify-self: center;
+    }
+    .get__in__touch__mail {
+        background: url(../img/icon-mail.png) no-repeat 0px 5px;
+        padding: 0 0 0 80px;
+        margin-bottom: 50px;
+    }
+    .get__in__touch__phone {
+        background: url(../img/icon-mail.png) no-repeat 0px 5px;
+        padding: 0 0 0 80px;
+        margin-bottom: 60px;
+    }
+    .get__in__touch__map {
+        background: url(../img/icon-mail.png) no-repeat 0px 5px;
+        padding: 0 0 0 80px;
+    }
+    .quick__links__list {
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+        li {
+            background: url(../img/strelka.png) no-repeat 0 6px;
+            padding: 0 0 0 30px;
+            line-height: 35px;
+        }
+    }
+    .our__services_list {
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+        li {
+            background: url(../img/strelka.png) no-repeat 0 6px;
+            padding: 0 0 0 30px;
+            line-height: 35px;
+        }
+    }
+    form {
+        input[type="text"],input[type="tel"], textarea {
+            background-color: #171717;
+            border: none;
+            border-bottom: 1px solid grey;
+            width: 231px;
+            padding-bottom: 16px;
+            margin-bottom: 20px;
+        }
+        input[type="submit"] {
+            color: #ffffff;
+            font-family: Lato, Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.32px;
+            border: 0 none;
+            border-radius: 50px;
+            background: #0087be;
+            padding: 10px 37px 10px 37px;
+            cursor: pointer;
+        }
+    }
+    .social__footer {
+        justify-self: center;
+        li {
+            display: inline-block;
+        }
+    }
+    .copyright {
+        justify-content: center;
+        background: #1a1a1a;
+        padding: 57px 0 47px 0;
+        grid-row: 3 / 4;
+        grid-column: 1 / -1;
+        p {
+            color: #615555;
+            font-family: "Open Sans", Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.33px;
+            text-align: center;
+        }
+    }
+}

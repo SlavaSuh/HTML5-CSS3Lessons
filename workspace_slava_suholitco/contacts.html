@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Книгомир</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div class="conteiner">
+            <header>
+                <a class="main__logo" href="index.html"><img src="img/books2.png" alt="main-logo" ></a>
+                <nav class="main__navigation">
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="#">Мой кабинет</a></li>
+                        <li><a href="#">Корзина</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="main__heading">
+                <h1>Добро пожаловать в книжный магазин  "Книгомир".</h1>
+                <h3>У нас вы найдете подходящую для вас книгу, на любой жанр.</h3>
+                <div class="search__container">
+                    <form action="/action_page.php">
+                    <input type="text" placeholder="Поиск.." name="search">
+                    <button type="submit"><img src="img/research1.png" alt=""></button>
+                    </form>
+                </div>
+            </div>
+            <div class="main__contacts">
+                <div class="main__contacts_form">
+                    <h2>Напишите нам</h2>
+                    <form action="" class="subforma">
+                        <fieldset>
+                            <label class="label">
+                                <p>Имя : <input type="text" name="name" placeholder="Ваше Имя"> </p>
+                            </label>
+                            <label class="label">
+                                <p>Email : <input type="email" name="email" placeholder="example@yandex.ru"> </p>
+                            </label>
+                            <label class="label">
+                                <p>Тема : <input type="text" name="tema" placeholder="Скидка при покупке оптом"> </p>
+                            </label>
+                            <p> <textarea name="textpole" id="" cols="50" rows="5" placeholder="Подробное описание интересующего вопроса."></textarea></p>
+                            <p>Прикрепить интересующий вас вопрос : <input type="file"> </p>
+                            <p>Отправить: <input type="button" name="button" value="Отправить"></p>
+                            <p>Сброс: <input type="reset" name="reset"></p>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="main__contacts__address_social">
+                    <h2>Адрес</h2>
+                    <div class="main__contacts__address_social-list">  
+                        <ul class="address__list">
+                            <li>Номер телефона : 222-741-898</li>
+                            <li>Адрес: Город Санкт-Петербург, улица Боярского 48/33</li>
+                            <li>Email : example@yandex.ru</li>
+                        </ul>
+                        
+                        <ul class="social__list">
+                            <li><a href="#">Vkontakte</a></li>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Gmail</a></li>
+                            <li><a href="#">Twitter</a></li>
+                        </ul>
+                    </div> 
+                </div>
+            </div>  
+            <iframe src="https://yandex.ru/map-widget/v1/-/CBqt4Xuq-A" width="100%" height="374px" frameborder="1" allowfullscreen="true"></iframe>
+
+            <footer>
+                <p>Книгомир 2018 &#169; </p>
+                <img class="footer__logo" src="img/books2_logo_footer.png" alt="logo">
+                <ul class="footer__social_list">
+                    <li><a href="#"><img src="img/vk.png" alt="Vkontakte"></a></li>
+                    <li><a href="#"><img src="img/facebook_32x32_2399.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="img/Instagram.png" alt="Instagram"></a></li>
+                    <li><a href="#"><img src="img/gmail.png" alt="Gmail"></a></li>
+                    <li><a href="#"><img src="img/twitter_32x32_3963.png" alt="Twitter"></a></li>
+                </ul>
+            </footer>
+        </div>
+    </body>
+</html>

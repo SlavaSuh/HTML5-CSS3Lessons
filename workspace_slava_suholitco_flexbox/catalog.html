@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Книгомир</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="conteiner">
+        <header>
+            <a class="main__logo" href="index.html"><img src="img/books2.png" alt="main-logo" ></a>
+            <nav class="main__navigation">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a class="current__page" href="catalog.html">Каталог</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="#">Мой кабинет</a></li>
+                    <li><a href="#">Корзина</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div class="main__heading">
+            <h1>Добро пожаловать в книжный магазин  "Книгомир".</h1>
+            <h3>У нас вы найдете подходящую для вас книгу, на любой жанр.</h3>
+            <div class="search__container">
+                <form action="/action_page.php">
+                <input type="text" placeholder="Поиск.." name="search">
+                <button type="submit"><img src="img/research1.png" alt=""></button>
+                </form>
+            </div>
+        </div>
+
+        <main class="wrapper__catalog">
+        <h1>Каталог</h1>
+        
+        <div class="catalog">
+            <div class="catalog__item">
+                <a class="catalog__image"  href="catalog-atlant.html"><img src="img/atlant.jpg" alt="Атлант расправил плечи"></a>
+                <div class="catalog__description"> 
+                    <div>
+                        <p class="description__short">Скидка 116 ₽</p>
+                        <p class="description__short">999 ₽  <span class="discounts">1 115 ₽</span></p> <!--  1 155 потом зачеркнется как скидка-->
+                        <a class="description__of__book" href="catalog-atlant.html">Атлант расправил плечи (комплект <br> из 3 книг)</a>
+                        <p class="description__short">В наличии</p>
+                    </div> 
+                    <a class="shopping__car" href="#">В корзину</a>
+                </div> 
+            </div>
+            <div class="catalog__item">
+                <a class="catalog__image" href="catalog-cveti.html"><img src="img/cveti.jpg" alt="Цветы для Элджернона"></a>
+                <div class="catalog__description">   
+                    <div>    
+                        <p class="description__short">270 ₽</p> 
+                        <a class="description__of__book" href="catalog-cveti.html">Цветы для Элджернона <br> 
+                            Дэниел Киз
+                        </a>
+                        <p class="description__short">В наличии</p>
+                    </div>
+                    <a class="shopping__car" href="#">В корзину</a>
+                </div>
+            </div>
+            <div class="catalog__item">
+                <a class="catalog__image" href="catalog-idiot.html"><img src="img/idiot.jpg" alt="Идиот"></a>
+                <div class="catalog__description">  
+                    <div>  
+                        <p class="description__short">Скидка 7 ₽</p>
+                        <p class="description__short">128 ₽ <span class="discounts">135 ₽</span></p> 
+                        <a class="description__of__book" href="catalog-idiot.html">Идиот <br> 
+                            Федор Достоевский
+                        </a>
+                        <p class="description__short">В наличии</p>
+                    </div>  
+                    <a class="shopping__car" href="#">В корзину</a>
+                </div>
+            </div>
+            <div class="catalog__item">
+                
+                <a class="catalog__image" href="catalog-bessi.html"><img src="img/bessi.jpg" alt="Бессы"></a>
+                <div class="catalog__description"> 
+                    <div>  
+                        <p class="description__short">128 ₽</p> 
+                        <a class="description__of__book" href="catalog-bessi.html">Бесы <br>
+                            Федор Достоевский
+                        </a>
+                        <p class="description__short">В наличии</p>
+                    </div> 
+                    <a class="shopping__car" href="#">В корзину</a>
+                </div>
+            </div>
+            <div class="catalog__item">
+                <a class="catalog__image" href="catalog-tri.html"><img src="img/tri.jpg" alt="Три товарища"></a>
+                <div class="catalog__description">  
+                    <div>    
+                        <p class="description__short">166 ₽</p> 
+                        <a class="description__of__book" href="catalog-tri.html">Три товарища <br> 
+                            Эрих Мария Ремарк
+                        </a>
+                        <p class="description__short">В наличии</p>
+                    </div>
+                    <a class="shopping__car" href="#">В корзину</a>
+                </div>
+            </div>
+            <div class="catalog__item">
+                <a class="catalog__image" href="catalog-chaika.html"><img src="img/chaika.jpg" alt="Чайка Джонатан Ливингстон"></a>
+                <div class="catalog__description">  
+                    <div>    
+                        <p class="description__short">Скидка 41 ₽</p>
+                        <p class="description__short">230 ₽ <span class="discounts">271 ₽</span></p> 
+                        <a class="description__of__book" href="catalog-chaika.html">Чайка Джонатан Ливингстон <br> 
+                            Ричард Бах
+                        </a>
+                        <p class="description__short">В наличии</p>
+                    </div>
+                    <a class="shopping__car" href="#">В корзину</a>
+                </div>
+            </div>
+        </div>
+
+        </main>
+
+        <div class="pagination">
+            <a href="#">&laquo;</a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+        </div>
+
+        <footer>
+            <p>Книгомир 2018 &#169; </p>
+            <img class="footer__logo" src="img/books2_logo_footer.png" alt="logo">
+            <ul class="footer__social_list">
+                <li><a href="#"><img src="img/vk.png" alt="Vkontakte"></a></li>
+                <li><a href="#"><img src="img/facebook_32x32_2399.png" alt="Facebook"></a></li>
+                <li><a href="#"><img src="img/Instagram.png" alt="Instagram"></a></li>
+                <li><a href="#"><img src="img/gmail.png" alt="Gmail"></a></li>
+                <li><a href="#"><img src="img/twitter_32x32_3963.png" alt="Twitter"></a></li>
+            </ul>
+        </footer>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,527 @@
+header .insideHeader, .whoWeAre .whoWeAreInside, .servicesWhatIDo .servicesWhatIDoInside, .clientWhatWeDo .clientWhatWeDoInside, .blog .blogInside, footer .footerInside {
+  width: 1200px;
+  margin: 0 auto; }
+
+.clearfix {
+  display: block;
+  clear: both; }
+
+.hidden {
+  opacity: 0; }
+
+.visible {
+  opacity: 1; }
+
+body {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+header {
+  position: relative;
+  background: url(../img/bg-header.png) no-repeat;
+  background-size: 100%; }
+  header .insideHeader {
+    padding: 35px 0 180px 0; }
+    header .insideHeader .logoNavigation {
+      margin: 0 0 210px 0;
+      display: flex;
+      justify-content: space-between; }
+      header .insideHeader .logoNavigation .logo {
+        color: #ffffff;
+        font-family: "Montserrat", sans-serif;
+        font-size: 34px;
+        font-weight: 900;
+        letter-spacing: 0.24px; }
+        header .insideHeader .logoNavigation .logo span {
+          color: #0081ff; }
+      header .insideHeader .logoNavigation nav ul {
+        margin: 10px 0 0 0;
+        padding: 0;
+        display: flex; }
+        header .insideHeader .logoNavigation nav ul li a {
+          color: #ffffff;
+          font-family: "Lato", sans-serif;
+          font-size: 15px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 0.24px; }
+        header .insideHeader .logoNavigation nav ul li:not(:last-child) {
+          margin-right: 30px; }
+    header .insideHeader .greeting {
+      width: 47%; }
+      header .insideHeader .greeting .hello {
+        color: #ffffff;
+        font-family: "Leckerli One";
+        font-size: 33px;
+        font-weight: 400;
+        letter-spacing: 0.52px;
+        margin: 0 0 30px 0; }
+      header .insideHeader .greeting .myName {
+        color: #ffffff;
+        font-family: "Montserrat", sans-serif;
+        font-size: 41px;
+        font-weight: 700;
+        line-height: 48px;
+        margin: 0 0 27px 0; }
+        header .insideHeader .greeting .myName span {
+          color: #0081ff;
+          font-family: "Montserrat", sans-serif;
+          font-weight: 700;
+          letter-spacing: 0.75px; }
+      header .insideHeader .greeting .nameAgency {
+        font-family: "Montserrat", sans-serif;
+        font-size: 30px;
+        font-weight: 400;
+        letter-spacing: 0.54px;
+        color: #ffffff;
+        margin: 0 0 60px 0; }
+      header .insideHeader .greeting .description {
+        color: #ffffff;
+        font-family: "Lato", sans-serif;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.42px;
+        margin: 0 0 80px 0; }
+      header .insideHeader .greeting a {
+        color: #ffffff;
+        font-family: Lato;
+        font-size: 15px;
+        font-weight: 400;
+        letter-spacing: 0.24px;
+        padding: 7px 30px 7px 30px;
+        border-radius: 50px;
+        background: #00aeed; }
+  header img {
+    position: absolute;
+    bottom: -51px;
+    left: 985px; }
+
+.whoWeAre {
+  background: #0081ff; }
+  .whoWeAre .whoWeAreInside {
+    padding: 114px 0 100px 0;
+    display: grid;
+    grid-template-columns: 40% 60%; }
+    .whoWeAre .whoWeAreInside .whoWeAreSection h2 {
+      color: #ffffff;
+      font-family: "Leckerli One";
+      font-size: 33px;
+      font-weight: 400;
+      letter-spacing: 0.52px;
+      margin: 0 0 40px 0; }
+    .whoWeAre .whoWeAreInside .whoWeAreSection p {
+      color: #ffffff;
+      font-family: "Montserrat", sans-serif;
+      font-size: 30px;
+      font-weight: 700;
+      letter-spacing: 0.75px;
+      margin: 0 0 23px 0; }
+    .whoWeAre .whoWeAreInside .whoWeAreSection .woWeAreParagraph {
+      color: #ffffff;
+      font-family: "Lato", sans-serif;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 30px;
+      letter-spacing: 0.42px;
+      margin: 0 0 42px 0; }
+    .whoWeAre .whoWeAreInside .whoWeAreSection a {
+      color: #ffffff;
+      font-family: Lato;
+      font-size: 15px;
+      font-weight: 400;
+      letter-spacing: 0.24px;
+      padding: 8px 30px 8px 30px;
+      border-radius: 50px;
+      background: #3b4374; }
+    .whoWeAre .whoWeAreInside .whoWeAreDescription {
+      justify-self: end;
+      width: 80%;
+      color: #ffffff;
+      font-family: "Lato", sans-serif;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 30px;
+      letter-spacing: 0.42px;
+      padding: 80px 0 0 0; }
+
+.servicesWhatIDo {
+  background: #007af3; }
+  .servicesWhatIDo .servicesWhatIDoInside {
+    padding: 126px 0 140px 0; }
+    .servicesWhatIDo .servicesWhatIDoInside h2 {
+      color: #ffffff;
+      font-family: "Leckerli One";
+      font-size: 33px;
+      font-weight: 400;
+      letter-spacing: 0.52px;
+      margin: 0 0 20px 0;
+      text-align: center; }
+    .servicesWhatIDo .servicesWhatIDoInside .norm {
+      margin: 0 0 77px 0;
+      color: #ffffff;
+      font-family: "Montserrat", sans-serif;
+      font-size: 35px;
+      font-weight: 700;
+      letter-spacing: 0.55px;
+      text-align: center; }
+    .servicesWhatIDo .servicesWhatIDoInside .gridBlock {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 130px; }
+      .servicesWhatIDo .servicesWhatIDoInside .gridBlock section {
+        padding: 0 0 0 80px; }
+        .servicesWhatIDo .servicesWhatIDoInside .gridBlock section h3 {
+          font-family: "Lato", sans-serif;
+          font-size: 17px;
+          font-weight: 800;
+          letter-spacing: 0.42px;
+          text-transform: uppercase;
+          color: #ffffff;
+          margin: 0 0 35px 0; }
+        .servicesWhatIDo .servicesWhatIDoInside .gridBlock section p {
+          color: #ffffff;
+          font-family: "Lato", sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          margin: 0 0 0 0; }
+      .servicesWhatIDo .servicesWhatIDoInside .gridBlock section:first-child {
+        background: url(../img/asd.png) no-repeat; }
+      .servicesWhatIDo .servicesWhatIDoInside .gridBlock section:nth-child(2) {
+        background: url(../img/qwe.png) no-repeat; }
+      .servicesWhatIDo .servicesWhatIDoInside .gridBlock section:last-child {
+        background: url(../img/zxc.png) no-repeat; }
+
+.profile .profileHeadings {
+  padding: 122px 0 64px 0; }
+  .profile .profileHeadings h2 {
+    color: #575757;
+    font-family: "Leckerli One";
+    font-size: 33px;
+    font-weight: 400;
+    letter-spacing: 0.52px;
+    margin: 0 0 0 0;
+    text-align: center; }
+  .profile .profileHeadings h3 {
+    color: #000000;
+    font-family: "Montserrat", sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 0.55px;
+    margin: 0 0 0 0;
+    text-align: center; }
+.profile .profileGallery {
+  width: 1600px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+  .profile .profileGallery .partLeft {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "partLeft-1 partLeft-1" "partLeft-2 partLeft-3"; }
+    .profile .profileGallery .partLeft .partLeft-1 {
+      grid-area: partLeft-1; }
+    .profile .profileGallery .partLeft .partLeft-2 {
+      grid-area: partLeft-2; }
+    .profile .profileGallery .partLeft .partLeft-3 {
+      grid-area: partLeft-3; }
+  .profile .profileGallery .partRight {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "partRight-1 partRight-2" "partRight-1 partRight-3"; }
+    .profile .profileGallery .partRight .partRight-1 {
+      grid-area: partRight-1; }
+    .profile .profileGallery .partRight .partRight-2 {
+      grid-area: partRight-2; }
+    .profile .profileGallery .partRight .partRight-3 {
+      grid-area: partRight-3; }
+
+.clientWhatWeDo {
+  background: url(../img/bg-client.png) no-repeat;
+  background-size: 100%; }
+  .clientWhatWeDo .clientWhatWeDoInside {
+    padding: 125px 0 170px 0; }
+    .clientWhatWeDo .clientWhatWeDoInside .clientWhatWeDoHeadings h2 {
+      color: #ffffff;
+      font-family: "Leckerli One";
+      font-size: 33px;
+      font-weight: 400;
+      letter-spacing: 0.52px;
+      margin: 0 0 20px 0;
+      text-align: center; }
+    .clientWhatWeDo .clientWhatWeDoInside .clientWhatWeDoHeadings .norm {
+      color: #ffffff;
+      font-family: "Montserrat", sans-serif;
+      font-size: 35px;
+      font-weight: 700;
+      letter-spacing: 0.55px;
+      text-align: center; }
+    .clientWhatWeDo .clientWhatWeDoInside .clientWhatWeDoHeadings h3 {
+      color: #ffffff;
+      font-family: "Lato", sans-serif;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 30px;
+      letter-spacing: 0.42px;
+      text-align: center;
+      margin: 50px 0 115px 0; }
+    .clientWhatWeDo .clientWhatWeDoInside .clientWhatWeDoHeadings .logoBlock {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 20px; }
+      .clientWhatWeDo .clientWhatWeDoInside .clientWhatWeDoHeadings .logoBlock img {
+        justify-self: center; }
+
+.blog .blogInside {
+  padding: 133px 0 161px 0;
+  animation-duration: 4s;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  grid-template-areas: "blog1 blog1 blog3 blog3" "blog2 blog2 blog3 blog3" "blog4 blog5 blog6 blog6"; }
+  .blog .blogInside div h3 {
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 0.55px;
+    margin: 0 0 0 0; }
+  .blog .blogInside div p {
+    color: #ffffff;
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    margin: 0 0 0 0;
+    text-align: center; }
+  .blog .blogInside div .november {
+    color: #ffffff;
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.5px; }
+  .blog .blogInside .blog1 {
+    grid-area: blog1;
+    animation-duration: 3s; }
+    .blog .blogInside .blog1 h3 {
+      color: #575757;
+      font-family: "Leckerli One";
+      font-size: 33px;
+      font-weight: 400;
+      letter-spacing: 0.52px; }
+    .blog .blogInside .blog1 .norm {
+      color: #000000;
+      font-family: "Montserrat", sans-serif;
+      font-size: 35px;
+      font-weight: 700;
+      letter-spacing: 0.55px;
+      margin-bottom: 49px; }
+    .blog .blogInside .blog1 p {
+      color: #3b3b3b;
+      font-family: "Lato", sans-serif;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 30px;
+      letter-spacing: 0.42px; }
+  .blog .blogInside .blog2 {
+    animation-duration: 3s;
+    grid-area: blog2;
+    background: #007ef9;
+    padding: 57px 55px 37px 43px; }
+    .blog .blogInside .blog2 p:first-child {
+      margin-bottom: 45px; }
+  .blog .blogInside .blog3 {
+    animation-duration: 3s;
+    grid-area: blog3;
+    background: url(../img/bg-blog3.png);
+    padding: 56px 50px 50px 48px; }
+    .blog .blogInside .blog3 h3 {
+      margin: 214px 0 15px 0;
+      text-align: center; }
+  .blog .blogInside .blog4 {
+    animation-duration: 3s;
+    grid-area: blog4;
+    padding: 39px 0 62px 0;
+    background: #eaeaea; }
+    .blog .blogInside .blog4 p {
+      color: #353535; }
+    .blog .blogInside .blog4 .lorem4 {
+      color: #353535;
+      font-family: "Montserrat", sans-serif;
+      font-size: 30px;
+      font-weight: 700;
+      letter-spacing: 0.48px;
+      margin-top: 48px; }
+  .blog .blogInside .blog5 {
+    animation-duration: 3s;
+    grid-area: blog5;
+    padding: 39px 0 62px 0;
+    background: #000000; }
+    .blog .blogInside .blog5 p {
+      color: #ffffff; }
+    .blog .blogInside .blog5 .lorem4 {
+      color: #ffffff;
+      font-family: "Montserrat", sans-serif;
+      font-size: 30px;
+      font-weight: 700;
+      letter-spacing: 0.48px;
+      margin-top: 48px; }
+  .blog .blogInside .blog6 {
+    animation-duration: 3s;
+    grid-area: blog6;
+    background: #e91d62;
+    padding: 24px 98px 38px 68px; }
+    .blog .blogInside .blog6 h3 {
+      text-align: center;
+      margin-bottom: 30px; }
+
+footer {
+  background: url(../img/footer-bg.png) no-repeat;
+  background-size: 100%; }
+  footer .footerInside {
+    padding: 115px 0 77px 0; }
+    footer .footerInside h2 {
+      color: #ffffff;
+      font-family: "Leckerli One";
+      font-size: 33px;
+      font-weight: 400;
+      letter-spacing: 0.52px;
+      margin: 0 0 35px 0; }
+    footer .footerInside .adressInfo {
+      width: 50%;
+      float: left; }
+      footer .footerInside .adressInfo h2 {
+        color: #ffffff;
+        font-family: "Montserrat", sans-serif;
+        font-size: 35px;
+        font-weight: 700;
+        letter-spacing: 0.55px;
+        margin: 0 0 80px 0; }
+      footer .footerInside .adressInfo div {
+        padding: 0 0 0 105px;
+        color: #ffffff;
+        font-family: "Lato", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.4px;
+        background: url(../img/footer-sms.png) no-repeat left center; }
+        footer .footerInside .adressInfo div span {
+          color: #ffffff;
+          font-size: 17px;
+          font-weight: 700; }
+      footer .footerInside .adressInfo div:nth-child(3) {
+        margin-top: 55px;
+        background: url(../img/footer-phone.png) no-repeat 8px 14px; }
+      footer .footerInside .adressInfo div:last-child {
+        background: url(../img/footer-map.png) no-repeat 0 8px;
+        margin-top: 55px; }
+    footer .footerInside .forma {
+      width: 50%;
+      float: left; }
+      footer .footerInside .forma h2 {
+        color: #ffffff;
+        font-family: "Montserrat", sans-serif;
+        font-size: 35px;
+        font-weight: 700;
+        letter-spacing: 0.55px;
+        margin: 0 0 80px 0; }
+      footer .footerInside .forma form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        color: #ffffff;
+        font-family: "Lato", sans-serif;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.42px; }
+        footer .footerInside .forma form input[type="text"], footer .footerInside .forma form input[type="email"], footer .footerInside .forma form input[type="tel"] {
+          width: 362px;
+          height: 37px;
+          border-radius: 15px;
+          background-color: #2b2b2b;
+          border: none; }
+      footer .footerInside .forma textarea {
+        width: 362px;
+        height: 81px;
+        border-radius: 15px;
+        background-color: #2b2b2b;
+        border: none; }
+      footer .footerInside .forma input[type="submit"] {
+        color: #ffffff;
+        font-family: "Lato", sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        letter-spacing: 0.24px;
+        background: #0280f9;
+        padding: 14px 40px 13px 40px;
+        border-radius: 50px;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 95px;
+        margin-top: 22px; }
+    footer .footerInside ul {
+      margin: 0 0 100px 0;
+      padding: 0;
+      display: flex;
+      justify-content: center; }
+      footer .footerInside ul li a {
+        width: 59px;
+        height: 56px;
+        display: inline-block; }
+      footer .footerInside ul li:first-child a {
+        background: url(../img/footer-list.png);
+        margin-right: 25px; }
+      footer .footerInside ul li:nth-child(2) a {
+        background: url(../img/footer-list.png);
+        background-position: -83px 0;
+        margin-right: 25px; }
+      footer .footerInside ul li:nth-child(3) a {
+        background: url(../img/footer-list.png);
+        background-position: -173px 0;
+        margin-right: 25px; }
+      footer .footerInside ul li:nth-child(4) a {
+        background: url(../img/footer-list.png);
+        background-position: -257px 0;
+        margin-right: 25px; }
+      footer .footerInside ul li:nth-child(5) a {
+        background: url(../img/footer-list.png);
+        background-position: -340px 0;
+        margin-right: 25px; }
+      footer .footerInside ul li:nth-child(6) a {
+        background: url(../img/footer-list.png);
+        background-position: -424px 0;
+        margin-right: 25px; }
+      footer .footerInside ul li:last-child a {
+        background: url(../img/footer-list.png);
+        background-position: -506px 0; }
+    footer .footerInside .designed {
+      color: #ffffff;
+      font-family: "Lato", sans-serif;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0.42px;
+      margin: 0 0 28px 0;
+      text-align: center; }
+    footer .footerInside .copyright {
+      color: #ffffff;
+      font-family: "Lato", sans-serif;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 24px;
+      text-transform: uppercase;
+      letter-spacing: 0.42px;
+      margin: 0 0 0 0;
+      text-align: center; }

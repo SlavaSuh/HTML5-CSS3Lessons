@@ -1,0 +1,448 @@
+body {
+    min-width: 50%;
+    min-height: 50%;
+}
+
+.conteiner {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    height: 300px;
+    background-image: url(../img/header.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%; 
+    position: relative;
+}
+.main__logo {
+    position: absolute;
+    left: 5%;
+}
+footer {
+    background-color: #2C3E50;
+    height: 200px;
+    position: relative;
+    border:1px solid #2C3E50;
+    margin-top: -4px;
+    clear: both;
+}
+h1 {
+    font-family:"Palatino Linotype", Helvetica, sans-serif;
+    text-align: center;
+    font-style: italic;
+    font-weight: 300;
+    color: #36BD82;
+    margin-top: 40px;
+}
+h3 {
+    font-family: "Palatino Linotype", Helvetica, sans-serif;
+    text-align: center;
+    font-style: italic;
+    font-weight: 300;
+    color: #36BD82;
+}
+
+ul {
+    list-style: none;
+}
+ul a {
+    text-decoration: none;
+    font-family: "Palatino Linotype", Helvetica, serif;
+    color:#36BD82;
+    font-size: 16px;
+}
+.main__navigation {
+    
+}
+.main__navigation a {
+    border: 1px solid #36BD82;
+    border-radius: 5px;
+    padding: 7px 15px 7px 15px;
+    background-color: #2C3E50;
+    color: #36BD82;
+
+}
+.main__navigation a:hover {
+    border: 1px solid #2C3E50;
+    background-color: #36BD82;
+    color: #2C3E50;
+}
+.main__navigation li {
+    display: inline-block;
+    margin-top: 1%;
+}
+.main__navigation li:first-child{
+    margin-left: 58%;
+}
+.search__container input[type="text"] {
+    width: 30%;
+    height: 40px;
+    border-radius: 50px;
+    text-align: center;
+    margin-left: 35%;
+    margin-top: 3%;
+    background-color: rgb(167, 242, 170);
+}
+
+.search__container button {
+    border: 0;
+    background-color: #2C3E50;
+    margin-left: 5px;   
+}
+.search__container button img {
+    margin: 0 0 -10px 0;
+}
+/*Книга внутри каталога*/
+.catalog__main {
+    background: url(../img/wrapper_catalog.png) no-repeat ;
+    background-position: 50% 50%;
+    height: 900px;
+    position: relative;
+    width: 100%;
+}
+.catalog__main__left-part {
+   float: left;
+   margin-left: 23%;
+   margin-top: 5%;
+}
+.catalog__main__right-part {
+    float: left;
+    width: 27%;
+    margin-left: 5%;
+    margin-top: 5%;
+    position: relative;
+}
+.catalog__main__right-part button {
+    color: #36BD82;
+    background-color: #2C3E50;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #3DBF83;
+    position: absolute;
+    left: 300px;
+    top: 550px;
+}
+.catalog__main__right-part button:hover {
+    border: 1px solid #2C3E50;
+    background-color: #36BD82;
+    color: #2C3E50;
+}
+
+/*Каталог-------------------------------------------------------*/
+.catalog {
+    width: 1100px;
+    margin: 0 auto;
+}
+.catalog__item {
+    border: 1px solid lightgray;
+    width: 300px;
+    height: 500px;
+    text-align: center;
+    float: left;
+    margin: 20px 20px 20px 20px;
+}
+.catalog__item:hover {
+    box-shadow: 0px 0px 22px black;
+}
+.catalog__description .shopping__car {
+    border: 1px solid #36BD82;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #2C3E50;
+    color: #3DBF83;
+    border-radius: 5px;
+}
+.catalog__description .shopping__car:hover {
+    border: 1px solid #2C3E50;
+    background-color: #36BD82;
+    color: #2C3E50;
+}
+
+/*4.2) Для текста краткого описания товар.*/
+.description__short {
+    font-family: "Palatino Linotype", Helvetica, serif;
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+/*4.3) Для текста подробного описания товара:*/
+.description__full {
+    font-family: "Palatino Linotype", Helvetica, serif;
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+.description__full::first-letter {
+    /*font-family: Arial;  нужно для задания, но без него мне болше нравиться*/
+    font-size: 2em;
+    
+}
+
+/*4.4) Для списка внурти подраздела Характеристики товара*/
+.description__of__product {
+    font-family: Tahoma, serif;
+    font-size: 14px;
+    line-height: 25px;
+    color:rgb(0, 0, 0);
+    margin-top: 100px;
+}
+/*Добавляю иконки в качестве маркеров к списку с описанием. */
+.description__of__product li {
+    background-image: url(../img/book.png);
+    background-repeat: no-repeat;
+    background-position: 0 6px;
+    padding-left: 25px;
+}
+
+/*5) Странице "Контакты":*/
+.main__contacts_form {
+    width: 50%;
+    float:left;
+    margin-left: 10px;
+    margin-bottom: 50px;
+    margin-right: 10px;
+}
+fieldset  {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #2C3E50;
+    border-style:none;
+}
+.main__contacts h2 {
+    color:#3DBF83;
+    font-style: italic;
+    font-weight: 300;
+}
+input[type="text"], textarea {
+    text-transform: capitalize;
+}
+input[type="text"], input[type="email"], textarea {
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(167, 242, 170);
+    color: #2C3E50;
+    width: 220px;
+}
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus{
+    background-color: white;
+    color: #2C3E50;
+}
+
+
+/*
+input[type="text"], input[type="email"] {
+    width: 200px;
+    height: 25px;
+    margin-left: 40px;
+}
+input[type="text"], input[type="email"], textarea {
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(167, 242, 170);
+    color: #2C3E50;
+}
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus{
+    background-color: white;
+    color: #2C3E50;
+}
+input[type="email"] {
+    margin-left: 32px;
+}
+*/
+.subforma input[type="button"] {
+    padding: 12px 23px 12px 23px;
+    border-radius: 10px;
+    background-color:rgb(53, 143, 101) ;
+    color:#fff;
+    font-size: 1em;
+    border-style: none;
+}
+.subforma input[type="button"]:hover {
+    background-color: #3DBF83 ;
+    box-shadow: 0 0 4px white;
+}
+.subforma input[type="reset"] {
+    
+    padding: 12px 23px 12px 23px;
+    border-radius: 10px;
+    color:#fff;
+    font-size: 1em;
+    border-style: none;
+    background-color: rgba(214, 17, 17, .8);
+}
+.subforma input[type="reset"]:hover {
+    background-color: rgb(252, 40, 40);
+    box-shadow: 0 0 4px white;
+}
+
+/*Меняю стиль placeholdera, нашел такой способ, не знаю верный ли?. Понял 
+что для разных браузеров.*/
+
+::-webkit-input-placeholder { color:rgb(27, 136, 23); font-family: "Palatino Linotype";font-size: 16px;opacity: .5;font-style: italic;}
+::-moz-placeholder {color:rgb(27, 136, 23); font-family: "Palatino Linotype";font-size: 16px;opacity: .5;font-style: italic;}
+:-ms-input-placeholder { color:rgb(27, 136, 23); font-family: "Palatino Linotype";font-size: 16px;opacity: .5;font-style: italic;}
+:-moz-placeholder {color:rgb(27, 136, 23); font-family: "Palatino Linotype";font-size: 16px;opacity: .5;font-style: italic;}
+
+/*----------------------------------------------------------*/
+
+/*Address, social   Contacts*/
+.main__contacts__address_social {
+    display: inline-block;
+}
+
+/*---------------------*/
+
+.address__list {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:rgb(0, 0, 0);
+    line-height: 30px;
+}
+/*Список соц сетей, стили. Решил использовать псевдоэлементы чтоб
+не засорять Html классами, отпишите насколько верно мое решение,
+спасибо.*/
+.social__list {
+    line-height: 35px;
+}
+.social__list li:first-child{
+    background-image: url(../img/vk.png);
+    background-repeat: no-repeat;
+    padding-left: 40px;  
+}
+.social__list li:nth-child(2){
+    background-image: url(../img/facebook_32x32_2399.png);
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
+.social__list li:nth-child(3){
+    background-image: url(../img/Instagram.png);
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
+.social__list li:nth-child(4){
+    background-image: url(../img/gmail.png);
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
+.social__list li:last-child{
+    background-image: url(../img/twitter_32x32_3963.png);
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
+
+/*Задаю стиль ссылкам Social*/
+.social__list a {
+    font-size: 17px;
+}
+.social__list li:first-child a {
+    color: #54769B;
+}
+.social__list li:nth-child(2) a {
+    color: #3D5DA6;
+}
+.social__list li:nth-child(3) a {
+    color: #895A4D;
+}
+.social__list li:nth-child(4) a {
+    color: #F1574A;
+}
+.social__list :last-child a {
+    color: #62C7E7;
+}
+
+
+
+
+.image__border {
+    border: 3px solid rgba(17, 210, 150, .5);
+}
+.image__border:hover {
+    border:none;
+    margin-left: 3px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
+/*------------------------------------------------------*/
+.description__of__book {
+    font-size: 17px;
+    color: #707070;
+    text-decoration: underline;
+}
+.description__of__book:hover {
+    color:#36BD82;
+}
+
+.discounts {
+    color: #707070;
+    opacity: .5;
+    text-decoration: line-through;
+}
+/*--------------index------------*/
+.main__heading {
+    height: 250px;
+    background-color: #2C3E50;
+    border: 1px solid #2C3E50;
+}
+/*На весь экран картинка*/
+.main__catalog_big-picture {
+    background-image: url(../img/background13.jpg);
+}
+.main__catalog_big-picture img {
+    width: 40%;
+    margin: 10px auto;
+}
+
+footer p {
+    color: #36BD82;
+    font-size: 20px;
+    font-style: italic;
+    margin-left: 90%;
+    margin-top: 10px; 
+}
+.footer__logo {
+    position: absolute;
+    left: 1%;
+    top: 10%;
+}
+.footer__social_list {
+    margin-left: 34%;
+    margin-top: 5%;
+}
+.footer__social_list li{
+    display: inline-block;
+    margin-right: 5%;
+}
+/*------------------------------------------------------------------------------------------*/
+.paginator__wrapper {
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    background-color: #00C37A;
+    color: white;
+    border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+.main__catalog_big-picture {
+    text-align: center;
+}

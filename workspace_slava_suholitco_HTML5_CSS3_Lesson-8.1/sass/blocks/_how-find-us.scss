@@ -1,0 +1,109 @@
+.b-how-find-us {
+    position: relative;
+
+    &__left-block {
+        padding-left: 150px;
+
+        @media (max-width: 1199.98px) {
+            padding: 0;
+            text-align: center;
+        }
+    }
+
+    &__heading {
+        color: #454443;
+        font-family: "Bebas Neue Bold";
+        font-size: 78px;
+        font-weight: 400;
+        line-height: 80.59px;
+        text-transform: uppercase;
+
+        margin-top: 70px; 
+
+        &_color {
+            color: #d25b38;
+        }
+    }
+
+    &__adress {
+        display: flex;
+        background: url(../../img/footer-map.png) no-repeat;
+        background-position: 0 10px;
+        padding:20px 0 0 80px; 
+        text-align: justify;
+
+        &_margin {
+            margin: 10px 0 25px 0;
+        }
+    }
+    
+    &__address-heading {
+        color: #d25b38;
+        font-family: $secondfont;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 36.59px;
+    }
+
+    &__call-us {
+        display: flex;
+        background: url(../../img/footer-phone.png) no-repeat;
+        background-position: 0 10px;
+        padding:20px 0 0 80px; 
+        text-align: justify;
+
+        &_margin {
+            margin-bottom: 25px;
+        }
+    }
+
+    &__call-us-heading {
+        color: #d25b38;
+        font-family: $secondfont;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 36.59px;
+    }
+
+    &__email {
+        display: flex;
+        background: url(../../img/footer-email.png) no-repeat;
+        background-position: 0 10px;
+        padding:20px 0 0 80px; 
+        text-align: justify;
+
+        &_margin {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__email-heading {
+        color: #d25b38;
+        font-family: $secondfont;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 36.59px;
+    }
+
+    &__website {
+        display: flex;
+        background: url(../../img/footer-web-site.png) no-repeat;
+        background-position: 0 10px;
+        padding:20px 0 0 80px; 
+        text-align: justify;
+    }
+
+    &__website-heading {
+        color: #d25b38;
+        font-family: $secondfont;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 36.59px;
+    }
+
+    &__img-block {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}

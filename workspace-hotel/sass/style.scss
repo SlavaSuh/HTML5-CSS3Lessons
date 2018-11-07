@@ -1,0 +1,626 @@
+@font-face {
+    font-family: 'OpenSans_Light';
+    src: url('../fonts/OpenSans-Light.eot');
+    src: url('../fonts/OpenSans-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans-Light.woff2') format('woff2'),
+        url('../fonts/OpenSans-Light.woff') format('woff'),
+        url('../fonts/OpenSans-Light.ttf') format('truetype'),
+        url('../fonts/OpenSans-Light.svg#OpenSans-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans_Bold';
+    src: url('../fonts/OpenSans-Bold.eot');
+    src: url('../fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans-Bold.woff2') format('woff2'),
+        url('../fonts/OpenSans-Bold.woff') format('woff'),
+        url('../fonts/OpenSans-Bold.ttf') format('truetype'),
+        url('../fonts/OpenSans-Bold.svg#OpenSans-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('../fonts/BebasNeue-Regular.eot');
+    src: url('../fonts/BebasNeue-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BebasNeue-Regular.woff2') format('woff2'),
+        url('../fonts/BebasNeue-Regular.woff') format('woff'),
+        url('../fonts/BebasNeue-Regular.ttf') format('truetype'),
+        url('../fonts/BebasNeue-Regular.svg#BebasNeue-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas';
+    src: url('../fonts/Bebas.eot');
+    src: url('../fonts/Bebas.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Bebas.woff2') format('woff2'),
+        url('../fonts/Bebas.woff') format('woff'),
+        url('../fonts/Bebas.ttf') format('truetype'),
+        url('../fonts/Bebas.svg#Bebas') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+%Bebas {
+    font-family: 'Bebas', sans-serif;
+}
+%BebasNeue {
+    font-family: 'BebasNeue', sans-serif;
+}
+%Open-norm {
+    font-family: 'OpenSans_Light', sans-serif;
+}
+
+%Open-bold {
+    font-family: 'OpenSans_Bold', sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+}
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    width: 1500px;
+    margin: 0 auto;
+}
+.container {
+    
+}
+header {
+    padding-top: 10px;
+    padding-bottom: 25px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .navigation-list {
+        @extend %Bebas;
+        display: flex;
+        li:not(:last-child) {
+            margin-right: 30px;
+        }
+        li {
+            a {
+                color: #0f0f0f;
+                font-size: 16px;
+                font-weight: 400;
+                letter-spacing: 1.12px;
+            }
+        }
+    }
+    
+}
+.header-gallery {
+    padding-bottom: 55px;
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "img1 img2"
+        "img1 img3";
+
+    .header-gallery__img1 {
+        grid-area: img1;
+    }
+
+    .header-gallery__img2 {
+        grid-area: img2;
+    }
+
+    .header-gallery__img3 {
+        grid-area: img3;
+    }
+
+    .header-gallery__heading {
+        
+        position: absolute;
+        top: 495px;
+        left: 190px;
+
+        h1 {
+            @extend %BebasNeue;
+            font-weight: 400;
+            line-height: 88.51px;
+            color: #ffffff;
+            font-size: 112px;
+            
+            margin: 0 0 30px 0;
+        }
+
+        p {
+            @extend %BebasNeue;
+            font-weight: 400;
+            line-height: 88.51px;
+            color: #000000;
+            font-size: 70px;
+
+            margin: 0 0 0 0;
+        }
+    }
+}
+.forma {
+    padding: 32px;
+    background: #1c1c1c;
+    border-bottom: 11px solid #4e26fd;
+    display: flex;
+    justify-content: space-between;
+
+    // input[type="text"] {
+    //     padding: 15px 0 13px 18px;  
+    // }
+
+    input[type="submit"] {
+        color: #ffffff;
+        @extend %Bebas;
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: 1.2px;
+        background-color: #4e26fd;
+        padding: 15px 53px 13px 18px;
+        border: none;
+        cursor: pointer;
+    }
+}
+.award-winning {
+    padding: 115px 0 105px 0;
+    .award-winning__heading {
+        color: #000000;
+        @extend %BebasNeue;
+        font-size: 55px;
+        font-weight: 400;
+        letter-spacing: 3.3px;
+        text-align: center;
+
+        margin: 0 0 40px 0;
+    }
+
+    &__block {
+       
+    }
+
+    &__block-heading {
+        color: #010101;
+        @extend %Open-bold;
+        font-size: 16px;
+        line-height: 24px;
+        /* Text style for "Middle of" */
+        letter-spacing: 0.64px;
+        text-align: center;
+
+        margin-top: 30px;
+    }
+
+    &__block-description {
+        color: #010101;
+        @extend %Open-norm;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.64px;
+        text-align: center;
+        margin: 0 0 40px 0;
+    }
+
+    &__button {
+        color: #4e26fd;
+        @extend %Bebas;
+        font-size: 24px;
+        letter-spacing: 1.44px;
+        text-align: center;
+
+        a {
+            border: 2px solid #223AB4;
+            padding: 7px 50px;
+            transition: .5s;
+        }
+        
+
+    }
+
+    &__button:hover a {
+        text-decoration: none;
+        transition: .5s;
+    }
+    
+}
+.winter-activities {
+
+    &__heading {
+        color: #000000;
+        @extend %BebasNeue;
+        font-size: 80px;
+        line-height: 69.4px;
+        letter-spacing: 2.51px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    &__grid-block {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        align-self: end;
+    }
+
+    &__block {
+        background: url(../img/wa-1.png);
+        height: 598px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        padding: 0 22px 0px 30px;
+    }
+
+    &__heading-block {
+        @extend %BebasNeue;
+        font-size: 60px;
+        line-height: 55px;
+        text-transform: uppercase;
+         color: #ffffff;
+    }
+
+    &__paragraph {
+        color: #ffffff;
+        @extend %Open-norm;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.64px;
+    }
+
+    &__block:nth-child(2) {
+        background: url(../img/wa-2.png);
+        height: 598px;
+    }
+
+    &__block:nth-child(3) {
+        background: url(../img/wa-3.png);
+        height: 598px;
+    }
+
+    &__block:nth-child(4) {
+        background: url(../img/wa-4.png);
+        height: 598px;
+    }
+
+    &__block:nth-child(5) {
+        background: url(../img/wa-5.png);
+        height: 598px;
+    }
+}
+.deluxe-rooms {
+    padding: 100px 0;
+
+    &__heading {
+        color: #000000;
+        @extend %BebasNeue;
+        font-size: 80px;
+        line-height: 88.73px;
+        text-transform: uppercase;
+        letter-spacing: 1.97px;
+        text-align: center;
+
+        margin-bottom: 70px;
+    }
+
+    &__grid-block {
+        display: grid;
+        grid-column-gap: 40px;
+        grid-template-columns: repeat(3, 1fr);
+
+        grid-template-areas: 
+            "b1 b2 b3"
+            "b4 b2 b5";
+
+        .block1 {
+            grid-area: b1;
+        }
+        .block2 {
+            grid-area: b2;
+        }
+        .block3 {
+            grid-area: b3;
+        }
+        .block4 {
+            grid-area: b4;
+        }
+        .block5 {
+            grid-area: b5;
+        }
+    }
+
+
+
+    &__block-heading {
+        color: #010101;
+        @extend %Open-bold;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.64px;
+
+        margin: 15px 0 5px 0;
+    }
+
+    &__block-description {
+        color: #010101;
+        @extend %Open-norm;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.64px;
+    }
+
+    &__button {
+        text-align: center;
+
+        color: #4e26fd;
+        @extend %Bebas;
+        font-size: 24px;
+        letter-spacing: 1.44px;
+
+        margin-top: 30px;
+
+        a {
+            text-decoration: none;
+            border: 2px solid #4e26fd;
+            padding: 6px 50px 10px 50px;
+        }
+    }  
+}
+.winter-weather {
+    background: url("/img/ww-bg.png") no-repeat;
+    padding: 111px 0 50px 0;
+
+    &__flex {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    &__heading {
+        text-shadow: 1px 3px 7px rgba(0, 0, 0, 0.35);
+        color: #ffffff;
+        @extend %Bebas;
+        font-size: 115px;
+        line-height: 110px;
+        text-transform: uppercase;
+        letter-spacing: 2.75px;
+    }
+
+    &__description {
+        text-shadow: 1px 3px 0 #000000;
+        color: #ffffff;
+        @extend %Open-norm;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.64px;
+
+        margin: 40px 0 35px 0;
+    }
+
+    &__button {
+        color: #ffffff;
+        @extend %Bebas;
+        font-size: 17px;
+        letter-spacing: 1.02px;
+        align-self: center;
+
+        margin-left: 320px;
+
+        a {
+            text-decoration: none;
+            color: #ffffff;
+            padding: 9px 52px 10px 52px;
+            background: #0000ff;
+        }
+    }
+}
+.news {
+
+    padding: 100px 0 80px 0;
+
+    &__heading {
+        color: #000000;
+        @extend%BebasNeue;
+        font-size: 112px;
+        line-height: 88.73px;
+        text-transform: uppercase;
+        letter-spacing: 2.75px;
+        text-align: center;
+
+        margin-bottom: 80px;
+    }
+
+    &__block {
+
+    }
+
+    &__block-heading {
+        color: #010101;
+        @extend %Open-bold;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.64px;
+
+        margin: 15px 0 10px 0;
+    }
+
+    &__block-description {
+        color: #010101;
+        @extend %Open-norm;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.64px;
+    }
+
+    &__button {
+        color: #4e26fd;
+        @extend %Bebas;
+        font-size: 17px;
+        letter-spacing: 1.02px;
+        text-align: center;
+        margin-top: 55px;
+
+        a {
+            text-decoration: none;
+            color: #4e26fd;
+            padding: 9px 52px 10px 52px;
+            border: 2px solid #4e26fd;
+        }
+    }
+}
+
+footer {
+    background: #252525;
+    padding: 30px 0 0 0;
+
+    .footer__our-contacts {
+        margin-top: 25px;
+    }
+
+    .footer__class {
+        color: #ffffff;
+        @extend %Open-norm;
+        font-size: 14px;
+        font-weight: 300;
+        /* Text style for "1, 23, Mai" */
+        letter-spacing: 0.84px;
+        padding-left: 30px;
+    }
+
+    .class1 {
+        background-image: url(../img/footer-contacts-icon.png);
+        background-repeat: no-repeat;
+        background-position: 0 3px;
+    }
+    .class2 {
+        background-image: url(../img/footer-contacts-icon.png);
+        background-repeat: no-repeat;
+        background-position: 0 -36px;
+    }
+    .class3 {
+        background-image: url(../img/footer-contacts-icon.png);
+        background-repeat: no-repeat;
+        background-position: 0 -75px;
+    }
+
+    .footer-lists{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 80px;
+
+        li:not(:last-child) {
+            margin-bottom: 20px;
+        }
+
+        a{
+            text-decoration:none;
+            color: #ffffff;
+            @extend %Bebas;
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 1.26px;
+        }
+    }
+
+    .we-in-social {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        
+        margin-top: 80px;
+        &__paragraph {
+            color: #ffffff;
+            @extend %Open-bold;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 22px;
+            letter-spacing: 0.28px;
+
+        }
+
+        ul {
+            li {
+                display: inline-block;
+                .fb {
+                    font-size:24px;
+                    color: #ffffff;
+                    transition: .5s;
+                    border: 1px solid #ffffff;
+                    padding: 6px 12px;
+                    
+                }
+                .fb:hover {
+                    transition: .5s;
+                    color: #4e26fd;
+                    border-color: #4e26fd;
+                }
+
+                .vk {
+                    font-size:24px;
+                    color: #ffffff;
+                    transition: .5s;
+                    border: 1px solid #ffffff;
+                    padding: 6px;
+                    
+                }
+                .vk:hover {
+                    transition: .5s;
+                    color: #4e26fd;
+                    border-color: #4e26fd;
+                }
+
+                .inst {
+                    font-size:24px;
+                    color: #ffffff;
+                    transition: .5s;
+                    border: 1px solid #ffffff;
+                    padding: 6px 8px;
+                    
+                }
+                .inst:hover {
+                    transition: .5s;
+                    color: #4e26fd;
+                    border-color: #4e26fd;
+                }
+
+                .you {
+                    font-size:24px;
+                    color: #ffffff;
+                    transition: .5s;
+                    border: 1px solid #ffffff;
+                    padding: 6px 8px;
+                    
+                }
+                .you:hover {
+                    transition: .5s;
+                    color: #4e26fd;
+                    border-color: #4e26fd;
+                }
+                
+            }
+            li:not(:last-child) {
+                margin-right: 15px;
+            }
+        }
+    }
+
+    .divider {
+        height: 1px;
+        background-color: #303030;
+        margin: 40px 0 20px 0;
+    }
+
+    p.footer-copyright {
+        color: #ffffff;
+        @extend %Open-norm;
+        font-size: 14px;
+        letter-spacing: 0.84px;
+        text-align: center;
+    }
+
+}

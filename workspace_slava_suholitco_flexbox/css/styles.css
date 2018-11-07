@@ -1,0 +1,371 @@
+header, .main__navigation ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    position: relative;
+}
+/*Current page----------------------------------------------------------------------*/
+.current__page {
+    background: linear-gradient(to right, #F0E599, #420F0E);
+    border-radius: 5px;
+}
+/*ХЕДЕР---------------------------------------------------------------------------- */
+header {
+    height: 300px;
+    background: url(../img/header.jpg) no-repeat 50% 50%;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.main__logo {
+    position: absolute;
+    left: 2%;
+    top: 20%;
+}
+.main__navigation {
+    background: linear-gradient(to right, rgb(51, 51, 51), rgb(66, 15, 14));
+    width: 100%;
+    position: fixed;
+}
+.main__navigation ul a {
+    color: #fff;
+    font-size: 1.2em;
+    padding: 10px 20px;
+}
+.main__navigation ul a:hover {
+    background: linear-gradient(to right, #F0E599, #420F0E);
+    border-radius: 5px;
+}
+/*Приветствие и поиск---------------------------------------------------------------*/
+.main__heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to right, #F0E599, #420F0E);
+}
+.main__heading h1, h3, footer p, .main__navigation ul a {
+    font-family:"Palatino Linotype", Helvetica, sans-serif;
+    font-style: italic;
+    color: white;
+    flex-basis: 100%;
+    text-shadow: 4px 4px 4px #420F0E;
+}
+.search__container {
+    width: 100%;
+    text-align: center;
+}
+.search__container input[type="text"] {
+    width: 30%;
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+    background:linear-gradient(to right, rgba(181, 229, 188, .5), rgba(252, 128, 89, .5) );
+    margin-bottom: 20px;
+}
+.search__container button {
+    background: linear-gradient(to right, #815D41, #7B563C);
+    border: none;
+}
+.search__container button img {
+    margin: 0 0 -10px 0;
+}
+/* Футер------------------------------------------------------------------------*/
+footer {
+    background: linear-gradient(to right, rgb(51, 51, 51), rgb(66, 15, 14));
+    position: relative;
+    height: 120px;
+}
+footer p {
+    font-size: 1.4em;
+    text-align: right;
+    margin: -4px 20px 0 0;
+}
+.footer__logo {
+    position: absolute;
+    left: 20px;
+}
+.footer__social_list {
+    display: flex;
+    justify-content: center;
+}
+.footer__social_list li {
+    padding: 0 20px 0 20px;
+}
+/*Каталог-----------------------------------------------------------------------*/
+.wrapper__catalog h1 {
+    text-align: center;
+    font-family:"Palatino Linotype", Helvetica, sans-serif;
+    font-style: italic;
+    color: #754D37;
+    text-shadow: 0px 0px 2px black;
+}
+.catalog {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.catalog .catalog__item {
+    flex-basis: 330px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 0 2px rgba(74, 24, 20, .2);
+}
+.catalog .catalog__item:hover {
+    box-shadow: 0 0 30px rgba(74, 24, 20, .1);
+}
+.catalog__item .catalog__image img{
+    margin: 50px 0 0 0;
+}
+.catalog__description {   
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center; 
+}
+.description__short {
+    font-family: "Palatino Linotype", Helvetica, serif;
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+.discounts {
+    color: #707070;
+    opacity: .5;
+    text-decoration: line-through;
+}
+a.description__of__book {
+    font-family: "Palatino Linotype", Helvetica, serif;
+    color: rgb(74, 24, 20);
+    text-decoration: underline;
+    font-style: italic;
+    font-size: 1.2em;
+}
+a.shopping__car {
+    border: solid 1px #E3D58E;
+    padding: 5px 7px;
+    border-radius: 3px;
+    background-color: #603426;
+    color:white;
+    margin-top: auto;
+}
+/*Стр Поодробного описания товара------------------------------------------------------*/
+.catalog__main {
+    background: url(../img/retina_wood.png);
+    padding: 30px 0 80px 0;
+}
+.catalog__main h1 {
+    text-align: center;
+    font-family:"Palatino Linotype", Helvetica, sans-serif;
+    font-style: italic;
+    color: #754D37;
+    text-shadow: 0px 0px 2px black;
+}
+.catalog__main__left-part {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin: 0 0 0 10%;
+}
+.image__border {
+    border: 5px solid #3C1D1D;
+}
+
+.description__full {
+    font-family: "Palatino Linotype", Helvetica, serif;
+    color: #484343;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+.description__full::first-letter {
+    font-size: 2em;
+}
+.description__of__product {
+    font-family: Tahoma, serif;
+    font-size: 17px;
+    line-height: 25px;
+    color:#3C1D1D;
+}
+.description__of__product li {
+    background-image: url(../img/book.png);
+    background-repeat: no-repeat;
+    background-position: 0 6px;
+    padding-left: 25px;
+}
+.catalog__main__right-part {
+    border: #3C1D1D solid 10px;
+    width: 80%;
+    margin: 50px auto 0 auto;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 40px #3C1D1D inset;
+    background: #fff;
+}
+.catalog__main__right-part h2, h4 {
+    font-size: 1.2em;
+}
+.catalog__main__right-part button {
+    padding: 15px 40px;
+    border: solid 1px #E3D58E;
+    border-radius: 3px;
+    background: linear-gradient(to right, #F0E599, #420F0E);
+    color:white;
+    font-size: 1.2em;
+}
+/*Страница с Большой картинкой-----------------------------------------------------*/
+.main__catalog_big-picture{
+    width: 100%;
+    background: url(../img/striped_lens.png);
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 50px 0;
+}
+/*Контакты-------------------------------------------------------------------------*/
+.main__contacts {
+    display: flex;
+    width: 100%;
+    padding: 0 0 20px 20px;
+}
+.main__contacts_form {
+    flex-basis: 50%;
+}
+.main__contacts h2 {
+    text-align: center;
+    font-family:"Palatino Linotype", Helvetica, sans-serif;
+    font-style: italic;
+    color: #754D37;
+    text-shadow: 0px 0px 2px black;
+}
+.main__contacts__address_social {
+    flex-basis: 40%;
+}
+.subforma fieldset{
+    border: none;
+}
+.subforma p {
+    font-family:"Palatino Linotype", Helvetica, sans-serif;
+    font-style: italic;
+    color: #754D37;
+    text-shadow: 0px 0px 2px black;
+}
+input[type="text"], input[type="email"], textarea {
+    background: linear-gradient(to right, #F0E599, #AA8F62);
+    border-radius: 5px;
+}
+input[type="text"], input[type="email"] {
+    width: 40%;
+    height: 5%;
+}
+textarea {
+    width: 60%;
+}
+input[type="button"], input[type="reset"] {
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    border: none;
+}
+input[type="button"] {
+    background: rgb(32, 163, 76);
+    color: #fff;
+}
+input[type="reset"] {
+    background: rgb(201, 31, 12);
+    color: #fff;
+}
+input[type="button"]:hover {
+    background: rgb(9, 114, 44);
+}
+input[type="reset"]:hover {
+    background: rgb(165, 18, 1);
+}
+.main__contacts__address_social li, social__list a {
+    font-size: 1.2em;
+    color: #3C1D1D;
+}
+
+
+/*Placeholder-------------------------------------------------------------------*/
+::-webkit-input-placeholder { color:#3F1514; font-family: "Palatino Linotype";font-size: 16px;opacity: .5;font-style: italic;}
+::-moz-placeholder {color:#3F1514; font-family: "Palatino Linotype";font-size: 16px;opacity: .5;font-style: italic;}
+:-ms-input-placeholder { color:#3F1514; font-family: "Palatino Linotype";font-size: 16px;opacity: .5;font-style: italic;}
+:-moz-placeholder {color:#3F1514; font-family: "Palatino Linotype";font-size: 16px;opacity: .5;font-style: italic;}
+/*------------------------------------------------------------------------------*/ 
+
+/*-------------------Paginator----------------------------*/
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    background: linear-gradient(to right, #E6D991, #51221A, #E6D991);
+    color: white;
+    border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+/*-----------------------------------Media--------------------------------------------*/
+@media (max-width: 670px) {
+    header {
+        height: 180px;
+        background: #fff;
+    }
+    .main__navigation {
+        background-image: none;
+        position: absolute;
+    }
+    .main__navigation ul{
+        flex-direction: column;
+    }
+    .main__navigation li {
+        padding-bottom: 10px;
+    }
+    .main__navigation li  a {
+        color: black;
+    }
+    .main__logo {
+        display:none;
+    }
+    .catalog {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    .main__catalog_big-picture img {
+        width: 80%;
+        height: 80%;
+    }
+}
+@media (min-width: 670px) and (max-width: 1500px) {
+    .main__catalog_big-picture img {
+        width: 80%;
+        height: 80%;
+    }
+}
+@media (min-width: 1500px) {
+    .conteiner {
+        width: 1500px;
+        margin: 0 auto;
+    }
+}

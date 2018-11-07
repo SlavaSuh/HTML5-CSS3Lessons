@@ -1,0 +1,561 @@
+/* line 4, ../sass/style.scss */
+.my-container {
+  max-width: 1330px;
+}
+
+/* line 8, ../sass/style.scss */
+header {
+  background: url(../img/header-bg.png) no-repeat;
+  background-position: center center;
+  padding: 0 0 100px 0;
+  position: relative;
+}
+/* line 15, ../sass/style.scss */
+header .logo-header {
+  margin-left: 55px;
+}
+/* line 19, ../sass/style.scss */
+header .header-navigation__list {
+  display: flex;
+  justify-content: flex-end;
+}
+/* line 23, ../sass/style.scss */
+header .header-navigation__list li {
+  margin-right: 30px;
+}
+/* line 26, ../sass/style.scss */
+header .header-navigation__list li:last-child {
+  margin: 0 75px 0 0;
+}
+/* line 31, ../sass/style.scss */
+header .header-navigation__list li a {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 124.26px;
+  text-transform: uppercase;
+}
+/* line 42, ../sass/style.scss */
+header .iron-man {
+  position: absolute;
+  top: 46px;
+  left: -24px;
+}
+@media (max-width: 1310px) {
+  /* line 42, ../sass/style.scss */
+  header .iron-man {
+    display: none;
+  }
+}
+/* line 52, ../sass/style.scss */
+header .header-headings {
+  text-align: end;
+  padding: 40px 0 0 0;
+}
+@media (max-width: 1200px) {
+  /* line 52, ../sass/style.scss */
+  header .header-headings {
+    text-align: center;
+  }
+}
+/* line 61, ../sass/style.scss */
+header .header-headings__heading {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 69px;
+  font-weight: 800;
+  line-height: 95px;
+  margin-bottom: 25px;
+}
+@media (max-width: 768px) {
+  /* line 61, ../sass/style.scss */
+  header .header-headings__heading {
+    font-size: 3rem;
+  }
+}
+/* line 75, ../sass/style.scss */
+header .header-headings__span {
+  color: #eeb501;
+  font-family: "Open Sans", sans-serif;
+  font-size: 144px;
+  font-weight: 800;
+}
+@media (max-width: 768px) {
+  /* line 75, ../sass/style.scss */
+  header .header-headings__span {
+    font-size: 3rem;
+  }
+}
+/* line 86, ../sass/style.scss */
+header .header-headings__description {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 36px;
+  margin-bottom: 85px;
+}
+@media (max-width: 405px) {
+  /* line 86, ../sass/style.scss */
+  header .header-headings__description {
+    margin-bottom: 10px;
+  }
+}
+/* line 100, ../sass/style.scss */
+header .header-headings__button {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  padding: 12px 44px;
+  border: 3px solid #ffffff;
+  transition: .3s;
+}
+/* line 110, ../sass/style.scss */
+header .header-headings__button:hover {
+  text-decoration: none;
+  color: #ffb600;
+  border: 3px solid #ffb600;
+}
+
+/* line 120, ../sass/style.scss */
+.our-skills {
+  margin: -8px 0 0 0;
+  padding: 66px 0 110px 0;
+  background-image: url(../img/our-skills-yellow-color.png), url(../img/vector-smart-object.png), url(../img/our-skills-bg.png);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: top 44px right -304px, bottom 0px left 0px, top 220px left -8px;
+  background-size: auto, cover, auto;
+}
+/* line 130, ../sass/style.scss */
+.our-skills h2 {
+  color: #1e0404;
+  font-size: 43px;
+  font-family: "Open Sans - Extrabold", sans-serif;
+  font-size: 65px;
+  font-weight: 800;
+  margin-top: 90px;
+}
+/* line 140, ../sass/style.scss */
+.our-skills .our-skills__heading {
+  font-weight: 800;
+  color: #ffffff;
+  background: #eeb501;
+  margin: 3px;
+  display: inline-block;
+}
+/* line 148, ../sass/style.scss */
+.our-skills__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+/* line 155, ../sass/style.scss */
+.our-skills__block2 {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+/* line 165, ../sass/style.scss */
+.our-skills__block-heading {
+  color: #1e0404;
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  margin: 20px 0 20px 0;
+}
+/* line 174, ../sass/style.scss */
+.our-skills__block-description {
+  color: #1e0404;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* line 184, ../sass/style.scss */
+.portofolio {
+  background: url(../img/portofolio-bg.png);
+  padding: 100px 0 70px 0;
+}
+/* line 189, ../sass/style.scss */
+.portofolio h3 {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 29px;
+  font-style: italic;
+  text-align: center;
+}
+/* line 197, ../sass/style.scss */
+.portofolio h2 {
+  color: #ffffff;
+  font-family: "Open Sans - Extrabold", sans-serif;
+  font-size: 43px;
+  font-weight: 800;
+  text-align: center;
+}
+/* line 205, ../sass/style.scss */
+.portofolio p {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+}
+/* line 215, ../sass/style.scss */
+.portofolio .grid-container {
+  margin-top: 65px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+}
+/* line 222, ../sass/style.scss */
+.portofolio .grid-container__right {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas: "img1 img2" "img3 img3";
+}
+/* line 229, ../sass/style.scss */
+.portofolio .grid-container__right .img1 {
+  grid-area: img1;
+}
+/* line 233, ../sass/style.scss */
+.portofolio .grid-container__right .img2 {
+  grid-area: img2;
+}
+/* line 237, ../sass/style.scss */
+.portofolio .grid-container__right .img3 {
+  grid-area: img3;
+}
+/* line 244, ../sass/style.scss */
+.portofolio .portofolio-button {
+  text-align: center;
+  margin-top: 60px;
+}
+/* line 249, ../sass/style.scss */
+.portofolio .portofolio-button a {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  padding: 15px 40px 13px 40px;
+  border: 3px solid #ffffff;
+  transition: .3s;
+}
+/* line 259, ../sass/style.scss */
+.portofolio .portofolio-button a:hover {
+  text-decoration: none;
+  color: #ffb600;
+  border: 3px solid #ffb600;
+}
+
+/* line 269, ../sass/style.scss */
+.our-team {
+  background-image: url(../img/our-skills-yellow-color.png), url(../img/vector-smart-object-our-team.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: left -446px top 270px, left top;
+  padding: 100px 0 80px 0;
+}
+/* line 277, ../sass/style.scss */
+.our-team__heading-block {
+  text-align: center;
+}
+/* line 280, ../sass/style.scss */
+.our-team__heading-block h3 {
+  color: #1e0404;
+  font-family: "Open Sans", sans-serif;
+  font-size: 29px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+/* line 289, ../sass/style.scss */
+.our-team__heading-block h2 {
+  color: #1e0404;
+  font-family: "Open Sans - Extrabold", sans-serif;
+  font-size: 43px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+/* line 298, ../sass/style.scss */
+.our-team__heading-block p {
+  color: #eeb501;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 20px;
+  margin-bottom: 45px;
+}
+/* line 308, ../sass/style.scss */
+.our-team__block {
+  text-align: center;
+}
+/* line 311, ../sass/style.scss */
+.our-team__block img {
+  width: 100%;
+}
+/* line 316, ../sass/style.scss */
+.our-team .our-team__block-padding {
+  padding-top: 80px;
+}
+/* line 320, ../sass/style.scss */
+.our-team .our-team__name {
+  color: #1e0404;
+  font-family: "Open Sans - Extrabold", sans-serif;
+  font-size: 29px;
+  font-weight: 800;
+  margin-top: 35px;
+}
+/* line 329, ../sass/style.scss */
+.our-team .our-team__profession {
+  color: #4f4f4f;
+  font-family: "Open Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+/* line 337, ../sass/style.scss */
+.testimonials {
+  background-image: url(../img/testimonials\ -bg.png);
+  text-align: center;
+  padding: 140px 0 135px 0;
+  background-size: cover;
+}
+/* line 343, ../sass/style.scss */
+.testimonials__heading-description {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 29px;
+  font-style: italic;
+  margin: 0 0 10px 0;
+}
+/* line 352, ../sass/style.scss */
+.testimonials__heading {
+  color: #ffffff;
+  font-family: "Open Sans - Extrabold", sans-serif;
+  font-size: 43px;
+  font-weight: 800;
+}
+/* line 359, ../sass/style.scss */
+.testimonials__tilda {
+  color: #eeb501;
+  font-family: "Open Sans - Extrabold", sans-serif;
+  font-size: 75px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -1.5px;
+  margin: 25px 0 25px 0;
+}
+/* line 370, ../sass/style.scss */
+.testimonials .left-quotes {
+  position: absolute;
+  left: 10px;
+  top: 0;
+}
+/* line 376, ../sass/style.scss */
+.testimonials .right-quotes {
+  position: absolute;
+  right: 0;
+  top: 45px;
+}
+/* line 382, ../sass/style.scss */
+.testimonials__description {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+  font-style: italic;
+  position: relative;
+  margin: 0 0 33px 0;
+}
+/* line 392, ../sass/style.scss */
+.testimonials__name {
+  color: #eeb501;
+  font-family: "Open Sans - Extrabold", sans-serif;
+  font-size: 29px;
+  font-weight: 800;
+  margin: 10px 0 0 0;
+}
+/* line 401, ../sass/style.scss */
+.testimonials__profession {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+/* line 409, ../sass/style.scss */
+.our-clients {
+  padding: 90px 0 90px 0;
+  background-image: url(../img/our-skills-yellow-color.png), url(../img/vector-smart-object-our-clietns.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top 100px  right -350px, center center;
+}
+/* line 416, ../sass/style.scss */
+.our-clients .heading-block {
+  text-align: center;
+}
+/* line 420, ../sass/style.scss */
+.our-clients__heading-description {
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 29px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+/* line 429, ../sass/style.scss */
+.our-clients__heading {
+  color: #1e0404;
+  font-family: "Open Sans - Extrabold", sans-serif;
+  font-size: 43px;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+/* line 438, ../sass/style.scss */
+.our-clients__tilda {
+  color: #eeb501;
+  font-family: "Open Sans - Extrabold", sans-serif;
+  font-size: 75px;
+  font-weight: 800;
+  line-height: 20px;
+  letter-spacing: -1.5px;
+  margin-bottom: 48px;
+}
+/* line 449, ../sass/style.scss */
+.our-clients__description {
+  color: #434343;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 60px;
+}
+/* line 458, ../sass/style.scss */
+.our-clients .grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 50px;
+  justify-items: center;
+  align-items: center;
+}
+
+/* line 468, ../sass/style.scss */
+footer {
+  background: url(../img/footer-bg.png);
+  padding: 110px 0 0 0;
+}
+/* line 472, ../sass/style.scss */
+footer .footer__heading-blockh3 {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 29px;
+  font-style: italic;
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+/* line 482, ../sass/style.scss */
+footer .footer__heading-blockh2 {
+  color: #ffffff;
+  font-family: "Open Sans - Extrabold", sans-serif;
+  font-size: 43px;
+  font-weight: 800;
+  text-align: center;
+}
+/* line 490, ../sass/style.scss */
+footer .footer__heading-block-tilda {
+  color: #eeb501;
+  font-family: "Open Sans - Extrabold", sans-serif;
+  font-size: 75px;
+  font-weight: 400;
+  line-height: 20px;
+  /* Text style for "~" */
+  letter-spacing: -1.5px;
+  text-align: center;
+  margin: 25px 0;
+}
+/* line 503, ../sass/style.scss */
+footer .footer__heading-block-description {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 60px;
+}
+/* line 513, ../sass/style.scss */
+footer .footer__form-heading {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 29px;
+  font-weight: 800;
+  text-align: center;
+  margin: 70px 0 30px 0;
+}
+/* line 523, ../sass/style.scss */
+footer input[type="text"], footer input[type="email"], footer input[type="tel"] {
+  width: 31%;
+  background-color: #2e2e2e;
+  border: none;
+  padding: 20px;
+  margin-right: 20px;
+}
+/* line 532, ../sass/style.scss */
+footer input.message {
+  width: 80%;
+  margin-top: 20px;
+}
+/* line 537, ../sass/style.scss */
+footer input[type="button"] {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 14px 40px;
+  background: transparent;
+  border: 3px solid #ffffff;
+  transition: .5s;
+  box-sizing: border-box;
+}
+/* line 550, ../sass/style.scss */
+footer input[type="button"]:hover {
+  color: #eeb501;
+  border: 3px solid #eeb501;
+  cursor: pointer;
+}
+/* line 557, ../sass/style.scss */
+footer .footer__social-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+/* line 562, ../sass/style.scss */
+footer .footer__social-list li {
+  margin-right: 20px;
+}
+/* line 567, ../sass/style.scss */
+footer .footer__adress {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+  margin-top: 50px;
+}
+/* line 578, ../sass/style.scss */
+footer .border-div {
+  height: 6px;
+  background-color: #eeb501;
+  margin: 60px 0;
+}
+/* line 585, ../sass/style.scss */
+footer .copyright {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}

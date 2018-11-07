@@ -1,0 +1,16 @@
+.b-cabinet-list {
+    
+    &__item {
+        display: inline-block;
+    }
+    
+    &__link {
+        color: #81b300;
+        font-weight: 400;
+        line-height: 14.4px;
+    }
+    
+    &_right {
+        text-align: end;
+    }
+}

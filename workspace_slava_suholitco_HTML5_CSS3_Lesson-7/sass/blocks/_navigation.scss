@@ -1,0 +1,29 @@
+.b-navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    background: #81b300;
+    
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+    
+    &__list-link {
+        color: #ffffff;
+        font-weight: 400;
+        line-height: 13px;
+        text-transform: uppercase;
+        
+        &:hover {
+            color: #000000;
+        }
+    }
+    
+    &__list-item {
+        
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+}
