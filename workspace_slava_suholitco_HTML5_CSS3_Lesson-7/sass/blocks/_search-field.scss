@@ -1,0 +1,25 @@
+.b-search-field {
+    
+    &__input-field {
+        width: 215px;
+        height: 33px;
+        background-color: #ffffff;
+        padding-left: 10px;
+    }
+    
+    &__input-button {
+        flex-direction: column;
+        color: #81b300;
+        font-size: 13px;
+        font-weight: bold;
+        line-height: 15px;
+        padding: 11px 6px;
+        background: #ffffff;
+        border: none;
+        cursor: pointer;
+        
+        &_margin-left {
+            margin-left: -3px;
+        }
+    }
+}

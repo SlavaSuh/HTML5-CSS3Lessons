@@ -1,0 +1,592 @@
+$mainfont : 'Open Sans', sans-serif;
+$fontbold : "Open Sans - Extrabold", sans-serif;
+
+.my-container {
+    max-width: 1330px;
+}
+
+header {
+    background: url(../img/header-bg.png) no-repeat;
+    background-position: center center;
+    padding: 0 0 100px 0;
+
+    position: relative;
+
+    .logo-header {
+        margin-left: 55px;
+    }
+
+    .header-navigation__list {
+        display: flex;
+        justify-content: flex-end;
+
+        li {
+            margin-right: 30px;
+
+            &:last-child {
+                margin: 0 75px 0 0;
+                
+            }
+
+            a {
+                color: #ffffff;
+                font-family: $mainfont;
+                font-size: 20px;
+                font-weight: 800;
+                line-height: 124.26px;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .iron-man {
+        position: absolute;
+        top: 46px;
+        left: -24px;
+
+        @media (max-width: 1310px) {
+            display: none;
+        }
+    }
+
+    .header-headings {
+
+        text-align: end;
+        padding: 40px 0 0 0;
+
+        @media (max-width: 1200px) { 
+            text-align: center;
+        }
+
+        &__heading {
+            color: #ffffff;
+            font-family: $mainfont;
+            font-size: 69px;
+            font-weight: 800;
+            line-height: 95px;
+
+            margin-bottom: 25px;
+
+            @media (max-width: 768px) {
+                font-size: 3rem;
+            }
+        }
+
+        &__span {
+            color: #eeb501;
+            font-family: $mainfont;
+            font-size: 144px;
+            font-weight: 800;
+
+            @media (max-width: 768px) {
+                font-size: 3rem;
+            }
+        }
+
+        &__description {
+            color: #ffffff;
+            font-family: $mainfont;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 36px;
+            
+            margin-bottom:85px;
+
+            @media (max-width: 405px) {
+                margin-bottom:10px;
+            }
+        }
+
+        &__button {
+            color: #ffffff;
+            font-family: $mainfont;
+            font-size: 22px;
+            font-weight: 700;
+            padding: 12px 44px;
+            border: 3px solid #ffffff;
+            transition: .3s;
+            
+
+            &:hover {
+                text-decoration: none;
+                color: #ffb600;
+                border: 3px solid #ffb600;
+            }
+        }
+    }
+
+}
+
+.our-skills {
+    margin: -8px 0 0 0;
+
+    padding: 66px 0 110px 0;
+    background-image: url(../img/our-skills-yellow-color.png), 
+        url(../img/vector-smart-object.png), 
+        url(../img/our-skills-bg.png);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: top 44px right -304px, bottom 0px left 0px, top 220px left -8px;
+    background-size: auto, cover, auto;
+    h2 {
+        color: #1e0404;
+        font-size: 43px;
+        font-family: $fontbold;
+        font-size: 65px;
+        font-weight: 800;
+
+        margin-top: 90px;
+    }
+
+    .our-skills__heading {
+        font-weight: 800;
+        color: #ffffff;
+        background: #eeb501;
+        margin: 3px;
+        display: inline-block;
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__block2 {
+        margin-top: 100px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        
+    }
+
+    &__block-heading {
+        color: #1e0404;
+        font-family: $mainfont;
+        font-size: 25px;
+        font-weight: 700;
+
+        margin: 20px 0 20px 0;
+    }
+
+    &__block-description {
+        color: #1e0404;
+        font-family: $mainfont;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+
+    }
+}
+
+.portofolio {
+    background: url(../img/portofolio-bg.png);
+
+    padding: 100px 0 70px 0;
+
+    h3 {
+        color: #ffffff;
+        font-family: $mainfont;
+        font-size: 29px;
+        font-style: italic;
+        text-align: center;
+    }
+    
+    h2 {
+        color: #ffffff;
+        font-family: $fontbold;
+        font-size: 43px;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    p {
+        color: #ffffff;
+        font-family: $mainfont;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: center;
+
+    }
+
+    .grid-container {
+        margin-top: 65px;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
+
+        &__right {
+            display: grid;
+            grid-gap: 20px;
+            grid-template-areas: 
+                "img1 img2"
+                "img3 img3";
+            
+            .img1 {
+                grid-area: img1;
+            }
+
+            .img2 {
+                grid-area: img2;
+            }
+
+            .img3 {
+                grid-area: img3;
+            }
+            
+        }
+    }
+
+    .portofolio-button {
+        text-align: center;
+
+        margin-top: 60px;
+
+        a {
+            color: #ffffff;
+            font-family: $mainfont;
+            font-size: 22px;
+            font-weight: 700;
+            padding: 15px 40px 13px 40px;
+            border: 3px solid #ffffff;
+            transition: .3s;
+
+
+            &:hover {
+                text-decoration: none;
+                color: #ffb600;
+                border: 3px solid #ffb600;
+                
+            }
+        }
+    }
+}
+
+.our-team {
+    background-image: url(../img/our-skills-yellow-color.png),
+    url(../img/vector-smart-object-our-team.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left -446px top 270px, left top;
+
+    padding: 100px 0 80px 0;
+
+    &__heading-block {
+        text-align: center;
+
+        h3 {
+            color: #1e0404;
+            font-family: $mainfont;
+            font-size: 29px;
+            font-style: italic;
+
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #1e0404;
+            font-family: $fontbold;
+            font-size: 43px;
+            font-weight: 800;
+
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #eeb501;
+            font-weight: 400;
+            font-size: 70px;
+            line-height: 20px;
+
+            margin-bottom: 45px;
+        }
+    }
+
+    &__block {
+        text-align: center;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .our-team__block-padding {
+        padding-top: 80px;
+    }
+
+    .our-team__name {
+        color: #1e0404;
+        font-family: $fontbold;
+        font-size: 29px;
+        font-weight: 800;
+
+        margin-top: 35px;
+    }
+
+    .our-team__profession {
+        color: #4f4f4f;
+        font-family: $mainfont;
+        font-size: 22px;
+        font-weight: 400;
+    }
+}
+
+.testimonials {
+    background-image: url(../img/testimonials\ -bg.png);
+    text-align: center;
+    padding: 140px 0 135px 0;
+    background-size: cover;
+
+    &__heading-description {
+        color: #ffffff;
+        font-family: $mainfont;
+        font-size: 29px;
+        font-style: italic;
+
+        margin: 0 0 10px 0;
+    }
+
+    &__heading {
+        color: #ffffff;
+        font-family: $fontbold;
+        font-size: 43px;
+        font-weight: 800;
+    }
+
+    &__tilda {
+        color: #eeb501;
+        font-family: $fontbold;
+        font-size: 75px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: -1.5px;
+
+        margin: 25px 0 25px 0;
+    }
+
+    .left-quotes {
+        position: absolute;
+        left : 10px;
+        top: 0;
+    }
+
+    .right-quotes {
+        position: absolute;
+        right : 0;
+        top: 45px;
+    }
+
+    &__description {
+        color: #ffffff;
+        font-family: $mainfont;
+        font-size: 25px;
+        font-style: italic;
+        position: relative;
+
+        margin: 0 0 33px 0;
+    }
+
+    &__name {
+        color: #eeb501;
+        font-family: $fontbold;
+        font-size: 29px;
+        font-weight: 800;
+
+        margin: 10px 0 0 0;
+    }
+
+    &__profession {
+        color: #ffffff;
+        font-family: $mainfont;
+        font-size: 25px;
+        font-weight: 400;
+    }
+}
+
+.our-clients {
+    padding: 90px 0 90px 0;
+    background-image: url(../img/our-skills-yellow-color.png),
+        url(../img/vector-smart-object-our-clietns.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top 100px  right -350px, center center;
+
+    .heading-block {
+        text-align: center;
+    }
+
+    &__heading-description {
+        color: #000000;
+        font-family: $mainfont;
+        font-size: 29px;
+        font-style: italic;
+
+        margin-bottom: 10px;
+    }
+
+    &__heading {
+        color: #1e0404;
+        font-family: $fontbold;
+        font-size: 43px;
+        font-weight: 800;
+
+        margin-bottom: 25px;
+    }
+
+    &__tilda {
+        color: #eeb501;
+        font-family: $fontbold;
+        font-size: 75px;
+        font-weight: 800;
+        line-height: 20px;
+        letter-spacing: -1.5px;
+
+        margin-bottom: 48px;
+    }
+
+    &__description {
+        color: #434343;
+        font-family: $mainfont;
+        font-size: 20px;
+        font-weight: 400;
+
+        margin-bottom: 60px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 50px;
+        justify-items: center;
+        align-items: center;
+    }
+}
+
+footer {
+    background: url(../img/footer-bg.png);
+    padding: 110px 0 0 0;
+
+    .footer__heading-blockh3 {
+        color: #ffffff;
+        font-family: $mainfont;
+        font-size: 29px;
+        font-style: italic;
+        text-align: center;
+
+        margin: 0 0 20px 0;
+    }
+
+    .footer__heading-blockh2 {
+        color: #ffffff;
+        font-family: $fontbold;
+        font-size: 43px;
+        font-weight: 800;
+        text-align: center;
+    }    
+
+    .footer__heading-block-tilda {
+        color: #eeb501;
+        font-family: $fontbold;
+        font-size: 75px;
+        font-weight: 400;
+        line-height: 20px;
+        /* Text style for "~" */
+        letter-spacing: -1.5px;
+        text-align: center;
+
+        margin: 25px 0;
+    }
+
+    .footer__heading-block-description {
+        color: #ffffff;
+        font-family: $mainfont;
+        font-size: 20px;
+        font-weight: 400;
+        text-align: center;
+
+        margin-bottom: 60px;
+    }
+
+    .footer__form-heading {
+        color: #ffffff;
+        font-family: $mainfont;
+        font-size: 29px;
+        font-weight: 800;
+        text-align: center;
+
+        margin: 70px 0 30px 0;
+    }
+
+    input[type="text"], input[type="email"], input[type="tel"] {
+        width: 31%;
+        background-color: #2e2e2e;
+        border: none;
+        padding: 20px;
+
+        margin-right: 20px;
+    }
+    
+    input.message {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    input[type="button"] {
+        color: #ffffff;
+        font-family: $mainfont;
+        font-size: 22px;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding: 14px 40px;
+        background: transparent;
+        border: 3px solid #ffffff;
+        transition: .5s;
+
+        box-sizing: border-box;
+
+        &:hover {
+            color: #eeb501;
+            border: 3px solid #eeb501;
+            cursor: pointer;
+        }
+    }
+
+    .footer__social-list {
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+
+        li {
+            margin-right: 20px;
+        }
+    }
+
+    .footer__adress {
+        color: #ffffff;
+        font-family: $mainfont;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 36px;
+        text-align: center;
+
+        margin-top: 50px;
+    }
+
+    .border-div {
+        height: 6px;
+        background-color: #eeb501;
+
+        margin: 60px 0;
+    }
+
+    .copyright {
+        color: #ffffff;
+        font-family: $mainfont;
+        font-size: 20px;
+        font-weight: 400;
+        text-align: center;
+    }
+}

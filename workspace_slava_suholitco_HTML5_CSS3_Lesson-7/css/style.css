@@ -1,0 +1,356 @@
+/* line 1, ../sass/blocks/_header.scss */
+.b-header {
+  position: relative;
+  padding: 38px 31px;
+}
+/* line 5, ../sass/blocks/_header.scss */
+.b-header__logo {
+  font-family: Georgia, serif;
+  font-size: 36px;
+  font-weight: 400;
+  color: #333333;
+  text-transform: uppercase;
+  line-height: 36px;
+}
+/* line 13, ../sass/blocks/_header.scss */
+.b-header__logo_big-c {
+  font-size: 46px;
+  line-height: 46px;
+}
+/* line 19, ../sass/blocks/_header.scss */
+.b-header__description-logo {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 13px;
+  color: #999999;
+  text-transform: none;
+  margin-top: 10px;
+}
+
+/* line 1, ../sass/blocks/_social-list.scss */
+.b-social-list {
+  width: 226px;
+}
+/* line 4, ../sass/blocks/_social-list.scss */
+.b-social-list__item {
+  display: inline-block;
+}
+/* line 7, ../sass/blocks/_social-list.scss */
+.b-social-list__item:not(:last-child) {
+  padding-right: 13px;
+}
+/* line 12, ../sass/blocks/_social-list.scss */
+.b-social-list_back-green {
+  background: #81b300;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding: 8px 13px 9px 13px;
+}
+/* line 19, ../sass/blocks/_social-list.scss */
+.b-social-list_right {
+  position: absolute;
+  top: 0;
+  right: 30px;
+}
+
+/* line 3, ../sass/blocks/_cabinet-list.scss */
+.b-cabinet-list__item {
+  display: inline-block;
+}
+/* line 7, ../sass/blocks/_cabinet-list.scss */
+.b-cabinet-list__link {
+  color: #81b300;
+  font-weight: 400;
+  line-height: 14.4px;
+}
+/* line 13, ../sass/blocks/_cabinet-list.scss */
+.b-cabinet-list_right {
+  text-align: end;
+}
+
+/* line 1, ../sass/blocks/_navigation.scss */
+.b-navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  background: #81b300;
+}
+/* line 7, ../sass/blocks/_navigation.scss */
+.b-navigation__list {
+  display: flex;
+  align-items: center;
+}
+/* line 12, ../sass/blocks/_navigation.scss */
+.b-navigation__list-link {
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 13px;
+  text-transform: uppercase;
+}
+/* line 18, ../sass/blocks/_navigation.scss */
+.b-navigation__list-link:hover {
+  color: #000000;
+}
+/* line 25, ../sass/blocks/_navigation.scss */
+.b-navigation__list-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+/* line 3, ../sass/blocks/_search-field.scss */
+.b-search-field__input-field {
+  width: 215px;
+  height: 33px;
+  background-color: #ffffff;
+  padding-left: 10px;
+}
+/* line 10, ../sass/blocks/_search-field.scss */
+.b-search-field__input-button {
+  flex-direction: column;
+  color: #81b300;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 15px;
+  padding: 11px 6px;
+  background: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+/* line 21, ../sass/blocks/_search-field.scss */
+.b-search-field__input-button_margin-left {
+  margin-left: -3px;
+}
+
+/* line 1, ../sass/blocks/_about-us.scss */
+.b-about-us {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  padding: 50px 35px 48px 35px;
+}
+/* line 7, ../sass/blocks/_about-us.scss */
+.b-about-us__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* line 15, ../sass/blocks/_about-us.scss */
+.b-about-us__image_margin {
+  margin-bottom: 20px;
+}
+/* line 20, ../sass/blocks/_about-us.scss */
+.b-about-us__heading {
+  color: #81b300;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+}
+/* line 26, ../sass/blocks/_about-us.scss */
+.b-about-us__heading_margin {
+  margin-bottom: 20px;
+}
+/* line 31, ../sass/blocks/_about-us.scss */
+.b-about-us__paragraph {
+  line-height: 20.8px;
+  text-align: justify;
+}
+
+/* line 1, ../sass/blocks/_our-porjects.scss */
+.b-our-projects {
+  padding: 50px 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+/* line 7, ../sass/blocks/_our-porjects.scss */
+.b-our-projects__heading {
+  color: #444444;
+  font-size: 14px;
+  line-height: 16.8px;
+  font-weight: 400;
+}
+/* line 13, ../sass/blocks/_our-porjects.scss */
+.b-our-projects__heading_margin {
+  margin: 20px 0 15px 0;
+}
+/* line 18, ../sass/blocks/_our-porjects.scss */
+.b-our-projects__description {
+  line-height: 20.8px;
+  text-align: start;
+}
+/* line 23, ../sass/blocks/_our-porjects.scss */
+.b-our-projects__link {
+  display: block;
+  color: #81b300;
+  font-weight: 400;
+  line-height: 13px;
+  text-align: end;
+}
+/* line 30, ../sass/blocks/_our-porjects.scss */
+.b-our-projects__link_margin {
+  margin-top: 15px;
+}
+
+/* line 1, ../sass/blocks/_footer.scss */
+.b-footer {
+  background: #3b3b3b;
+  padding: 40px 32px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 25px;
+}
+
+/* line 3, ../sass/blocks/_footer-section.scss */
+.b-footer-section__heading {
+  color: #666666;
+  font-weight: 400;
+  line-height: 15.6px;
+  text-transform: uppercase;
+}
+/* line 9, ../sass/blocks/_footer-section.scss */
+.b-footer-section__heading_margin {
+  margin-bottom: 30px;
+}
+/* line 14, ../sass/blocks/_footer-section.scss */
+.b-footer-section__description {
+  color: #999999;
+  font-weight: 400;
+  line-height: 19.2px;
+}
+/* line 20, ../sass/blocks/_footer-section.scss */
+.b-footer-section__span {
+  color: #999999;
+  font-weight: bold;
+  line-height: 15.6px;
+}
+/* line 26, ../sass/blocks/_footer-section.scss */
+.b-footer-section__link {
+  display: block;
+  color: #81b300;
+  font-weight: 400;
+  line-height: 14.4px;
+  text-align: end;
+}
+/* line 33, ../sass/blocks/_footer-section.scss */
+.b-footer-section__link_margin {
+  margin-top: 10px;
+}
+
+/* line 1, ../sass/blocks/_quicklist.scss */
+.b-quicklist {
+  display: flex;
+  flex-direction: column;
+}
+/* line 5, ../sass/blocks/_quicklist.scss */
+.b-quicklist__heading {
+  color: #666666;
+  font-weight: 400;
+  line-height: 15.6px;
+}
+/* line 10, ../sass/blocks/_quicklist.scss */
+.b-quicklist__heading_margin {
+  margin-bottom: 30px;
+}
+/* line 15, ../sass/blocks/_quicklist.scss */
+.b-quicklist__link {
+  color: #999999;
+  font-weight: 400;
+  line-height: 20px;
+}
+/* line 20, ../sass/blocks/_quicklist.scss */
+.b-quicklist__link_border {
+  border-bottom: 1px solid #484848;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+/* line 1, ../sass/blocks/_forma.scss */
+.b-forma {
+  display: flex;
+  flex-direction: column;
+}
+/* line 5, ../sass/blocks/_forma.scss */
+.b-forma__heading {
+  color: #666666;
+  font-weight: 400;
+  line-height: 15.6px;
+}
+/* line 10, ../sass/blocks/_forma.scss */
+.b-forma__heading_margin-b {
+  margin-bottom: 30px;
+}
+/* line 15, ../sass/blocks/_forma.scss */
+.b-forma__input-name {
+  height: 34px;
+  background-color: #1f1f1f;
+  border-radius: 5px;
+  border: none;
+  padding-left: 10px;
+}
+/* line 22, ../sass/blocks/_forma.scss */
+.b-forma__input-name_margin-b {
+  margin-bottom: 10px;
+}
+/* line 27, ../sass/blocks/_forma.scss */
+.b-forma__input-email {
+  height: 34px;
+  background-color: #1f1f1f;
+  border-radius: 5px;
+  border: none;
+  padding-left: 10px;
+}
+/* line 34, ../sass/blocks/_forma.scss */
+.b-forma__input-email_margin-b {
+  margin-bottom: 10px;
+}
+/* line 38, ../sass/blocks/_forma.scss */
+.b-forma__button {
+  color: #81b300;
+  font-weight: bold;
+  line-height: 20.58px;
+  background-color: #1f1f1f;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  padding: 7px 14px 5px 14px;
+  align-self: flex-start;
+}
+
+/* line 13, ../sass/style.scss */
+body {
+  font-family: Georgia, serif;
+  color: #888888;
+  font-size: 13px;
+}
+
+/* line 19, ../sass/style.scss */
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  border-top: 28px solid #1f1f1f;
+  border-bottom: 28px solid #1f1f1f;
+  border-left: 18px solid #1f1f1f;
+  border-right: 18px solid #1f1f1f;
+}
+
+/* line 28, ../sass/style.scss */
+.line {
+  background: #81b300;
+  height: 5px;
+}
+
+/* line 33, ../sass/style.scss */
+.grey-line {
+  border-bottom: 1px solid #e2e2e2;
+}
+
+/* line 37, ../sass/style.scss */
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 30px;
+  background: #2e2e2e;
+  color: #737373;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 14.4px;
+}

@@ -1,0 +1,23 @@
+.b-about-us-section {
+
+    &__heading {
+        color: #454443;
+        font-family: $secondfont;
+        font-size: 78px;
+        font-weight: 400;
+        line-height: 80.59px;
+        text-transform: uppercase;
+
+        &_span {
+            color: #d25b38;
+        }
+    }
+
+    &__description {
+        text-align: justify;
+    }
+
+    &_padding {
+        padding: 100px 0 30px 0;
+    }
+}

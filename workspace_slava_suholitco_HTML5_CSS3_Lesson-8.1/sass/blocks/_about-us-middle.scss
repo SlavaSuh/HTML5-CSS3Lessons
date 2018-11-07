@@ -1,0 +1,35 @@
+.b-about-us-middle {
+    background: url(../../img/about-us-image.png) no-repeat;
+    background-size: cover;
+    opacity: .9;
+    height: 794px;
+    padding: 89px 58px 130px 68px;
+    text-align: end;
+
+    &__block:not(:last-child) {
+        border-bottom: 1px solid rgba($color: #ffffff, $alpha: .3);
+        padding-bottom: 35px;
+    }
+
+    &__first-description {
+        color: #ffffff;
+        font-family: $secondfont;
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 36.59px;
+        text-transform: uppercase;
+
+        &_margin {
+            margin-top: 50px;
+        }
+    }
+
+    &__second-description {
+        color: #ffffff;
+        font-family: $secondfont;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 36.59px;
+        text-transform: uppercase;
+    }
+}

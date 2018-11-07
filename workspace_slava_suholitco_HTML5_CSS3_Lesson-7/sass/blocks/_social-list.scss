@@ -1,0 +1,24 @@
+.b-social-list {
+    width: 226px;
+    
+    &__item {
+        display: inline-block;
+        
+        &:not(:last-child) {
+            padding-right: 13px;
+        }
+    }
+    
+    &_back-green {
+        background: #81b300;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        padding: 8px 13px 9px 13px;
+    }
+    
+    &_right {
+        position: absolute;
+        top:0;
+        right: 30px;
+    }
+}

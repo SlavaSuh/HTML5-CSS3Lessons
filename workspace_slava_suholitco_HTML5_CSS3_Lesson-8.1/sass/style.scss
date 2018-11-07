@@ -1,0 +1,53 @@
+@import "blocks/variables";
+@import "blocks/fonts";
+@import "blocks/navigation";
+@import "blocks/heading-block";
+@import "blocks/about-us";
+@import "blocks/about-us-middle";
+@import "blocks/about-us-right";
+
+@import "nbb/our-services";
+
+@import "blocks/design-blog";
+@import "blocks/our-team";
+
+@import "nbb/our-portofolio";
+
+@import "blocks/design-packages";
+@import "blocks/how-find-us";
+
+
+body {
+    box-sizing: border-box;
+    color: #666564;
+    font-family: $mainfont;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+p {
+    margin: 0;
+}
+
+header {
+    padding: 55px 0 190px 0;
+    background: url(../img/header-bg.png) no-repeat;
+    background-size: cover;
+}
+
+.heading-another-color {
+    color: #f05b33;
+}
+
+.header-buttons {
+    @media (max-width: 767.98px) {
+        display: flex; 
+        flex-direction: column;
+    }
+}
+
+.copyright {
+    background: #f2f2f2;
+    padding: 60px 0;
+    text-align: center;
+}

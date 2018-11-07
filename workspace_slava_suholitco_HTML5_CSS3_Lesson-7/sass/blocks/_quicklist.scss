@@ -1,0 +1,26 @@
+.b-quicklist {
+    display: flex;
+    flex-direction: column;
+    
+    &__heading {
+        color: #666666;
+        font-weight: 400;
+        line-height: 15.6px;
+        
+        &_margin {
+            margin-bottom: 30px;
+        }
+    }
+    
+    &__link {
+        color: #999999;
+        font-weight: 400;
+        line-height: 20px;
+        
+        &_border {
+            border-bottom: 1px solid #484848;
+            padding-bottom: 5px; 
+            padding-top: 5px; 
+        }
+    }
+}
